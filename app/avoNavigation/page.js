@@ -33,8 +33,16 @@ export default function AvoNavigation() {
                         { name: "Bookey", path: "/services/hampers/bookey" },
                     ]
                 },
+                { name: "products",path: "/services/products",
+                    dropdown:[
+                        { name: "sweets", path: "/services/products/sweets"},
+                        { name: "choclate",path:"/services/products/choclate"},
+                    ]
+                },
                 { name: "Hampers", path: "/services/hampers" },
                 { name: "Hampers", path: "/services/hampers" },
+                
+                
             ]
         },
         {
