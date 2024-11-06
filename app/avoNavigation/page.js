@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import "./Navigation.css";
-import AvoLogo from "../Images/AvoLogo.png"
+import AvoLogo from "../Images/AvoLogo.png";
+
 export default function AvoNavigation() {
     const Links = [
         {
@@ -9,11 +10,32 @@ export default function AvoNavigation() {
         },
         {
             name: "About",
-            path: "/about"
+            path: "/about",
+            dropdown:[
+                {name:"our vision", path:"/about/vision",
+                    dropdown:[
+                        {name:"goal", path:"/about/vision/goal"},
+                        {name:"plans", path:"/about/vision/plans"},
+                    ]
+                },
+                {name:"our client", path:"/about/client"},
+            ]
         },
         {
             name: "Services",
-            path: "/services"
+            path: "/services",
+            dropdown: [
+                { 
+                    name: "Hampers", 
+                    path: "/services/hampers",
+                    dropdown: [
+                        { name: "Bookey", path: "/services/hampers/bookey" },
+                        { name: "Bookey", path: "/services/hampers/bookey" },
+                    ]
+                },
+                { name: "Hampers", path: "/services/hampers" },
+                { name: "Hampers", path: "/services/hampers" },
+            ]
         },
         {
             name: "Contact",
@@ -25,14 +47,40 @@ export default function AvoNavigation() {
         <navbar>
             <div className="NavigationContainer">
                 <div className="LogoContainer">
-                <Image src={AvoLogo} alt="Avo Logo"/>
+                    <Image src={AvoLogo} alt="Avo Logo" />
                 </div>
 
                 <div className="NavigationLinksContainer">
                     {Links.map((link, index) => (
-                        <a key={index} href={link.path} className="navLink">
-                            {link.name}
-                        </a>
+                        link.dropdown ? (
+                            <div key={index} className="navItemWithDropdown">
+                                <a href={link.path} className="navLink">
+                                    {link.name}
+                                </a>
+                                <div className="dropdownMenu">
+                                    {link.dropdown.map((dropdownItem, dropdownIndex) => (
+                                        <div key={dropdownIndex} className="dropdownItemWithSubmenu">
+                                            <a href={dropdownItem.path} className="dropdownItem">
+                                                {dropdownItem.name}
+                                            </a>
+                                            {dropdownItem.dropdown && (
+                                                <div className="submenu">
+                                                    {dropdownItem.dropdown.map((subItem, subIndex) => (
+                                                        <a key={subIndex} href={subItem.path} className="submenuItem">
+                                                            {subItem.name}
+                                                        </a>
+                                                    ))}
+                                                </div>
+                                            )}
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        ) : (
+                            <a key={index} href={link.path} className="navLink">
+                                {link.name}
+                            </a>
+                        )
                     ))}
                 </div>
 
