@@ -525,16 +525,18 @@ video {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+@import url('https://fonts.cdnfonts.com/css/avenir');
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  font-family: 'Avenir', sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: white;
+    --foreground: black;
   }
 }
 
@@ -542,9 +544,25 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Avenir', sans-serif;
 }
 
+
+section{
+  padding: 3rem 2rem;
+}
 /*!******************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./app/avoNavigation/Navigation.css ***!
   \******************************************************************************************************************************************************************************************************************************************************************************/
+.NavigationContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0px;
+    background: #273631;
+}
 
+.NavigationLinksContainer a {
+    color: white;
+    padding: 0px 20px;
+}
