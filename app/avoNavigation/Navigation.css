@@ -22,13 +22,14 @@
     padding: 10px;
     margin-right: 20px;
     position: relative;
-    opacity: 1;
-    transition: opacity 0.3s ease;
+    display: inline-block;
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease;
 }
 
 .navLink:hover{
     text-decoration: underline;
-    opacity: 0.6;
+    transform: rotateX(35deg);
 }
 
 .navItemWithDropdown {
