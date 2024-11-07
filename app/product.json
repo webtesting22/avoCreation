@@ -1,0 +1,207 @@
+[
+    {
+      "title": "Gourmet Delight Hamper",
+      "description": "A premium selection of gourmet treats including chocolates, cookies, and artisanal snacks, perfect for any occasion.",
+      "price": 4099,
+      "image": "https://example.com/images/gourmet_delight.jpg"
+    },
+    {
+      "title": "Wellness Essentials Hamper",
+      "description": "A rejuvenating gift hamper filled with wellness products such as herbal teas, essential oils, and organic skincare.",
+      "price": 3299,
+      "image": "https://example.com/images/wellness_essentials.jpg"
+    },
+    {
+      "title": "Celebration Gift Basket",
+      "description": "An extravagant assortment of wine, cheese, crackers, and sweet treats, perfect for celebrating special moments.",
+      "price": 6599,
+      "image": "https://example.com/images/celebration_basket.jpg"
+    },
+    {
+      "title": "Coffee Lovers' Hamper",
+      "description": "A delightful collection of premium coffees, biscotti, and mugs designed to please every coffee enthusiast.",
+      "price": 4999,
+      "image": "https://example.com/images/coffee_lovers.jpg"
+    },
+    {
+      "title": "Chocolate Indulgence Box",
+      "description": "An irresistible box filled with a variety of gourmet chocolates from around the world.",
+      "price": 2499,
+      "image": "https://example.com/images/chocolate_indulgence.jpg"
+    },
+    {
+      "title": "Luxury Spa Hamper",
+      "description": "Pamper yourself with luxurious spa essentials including bath bombs, scented candles, and body lotions.",
+      "price": 5399,
+      "image": "https://example.com/images/luxury_spa.jpg"
+    },
+    {
+      "title": "Snack Attack Basket",
+      "description": "A fun assortment of savory and sweet snacks, ideal for movie nights and casual gatherings.",
+      "price": 2899,
+      "image": "https://example.com/images/snack_attack.jpg"
+    },
+    {
+      "title": "Wine & Cheese Hamper",
+      "description": "A sophisticated combination of fine wines and artisanal cheeses, perfect for wine lovers.",
+      "price": 7299,
+      "image": "https://example.com/images/wine_cheese.jpg"
+    },
+    {
+      "title": "Holiday Treats Box",
+      "description": "A festive collection of holiday-themed treats like gingerbread cookies, peppermint bark, and spiced nuts.",
+      "price": 3699,
+      "image": "https://example.com/images/holiday_treats.jpg"
+    },
+    {
+      "title": "Healthy Bites Hamper",
+      "description": "A selection of nutritious snacks including dried fruits, nuts, granola bars, and organic juices.",
+      "price": 3299,
+      "image": "https://example.com/images/healthy_bites.jpg"
+    },
+    {
+      "title": "Breakfast Essentials Basket",
+      "description": "Start your day right with gourmet coffee, tea, pastries, and jams in this delightful breakfast hamper.",
+      "price": 4499,
+      "image": "https://example.com/images/breakfast_essentials.jpg"
+    },
+    {
+      "title": "Italian Delights Hamper",
+      "description": "A taste of Italy with pasta, olive oil, balsamic vinegar, sauces, and more.",
+      "price": 5799,
+      "image": "https://example.com/images/italian_delights.jpg"
+    },
+    {
+      "title": "BBQ Lovers' Box",
+      "description": "An exciting mix of BBQ sauces, rubs, marinades, and grilling tools for the BBQ enthusiast.",
+      "price": 4999,
+      "image": "https://example.com/images/bbq_lovers.jpg"
+    },
+    {
+      "title": "Baker's Delight Basket",
+      "description": "Perfect for the home baker, this hamper includes baking mixes, tools, and gourmet baking ingredients.",
+      "price": 4099,
+      "image": "https://example.com/images/bakers_delight.jpg"
+    },
+    {
+      "title": "Afternoon Tea Hamper",
+      "description": "A lovely selection of teas, biscuits, and jam to enjoy a classic afternoon tea experience.",
+      "price": 3699,
+      "image": "https://example.com/images/afternoon_tea.jpg"
+    },
+    {
+      "title": "Organic Food Hamper",
+      "description": "A carefully curated selection of organic foods including quinoa, nuts, and dried fruits.",
+      "price": 4999,
+      "image": "https://example.com/images/organic_food.jpg"
+    },
+    {
+      "title": "Craft Beer Hamper",
+      "description": "An assortment of unique craft beers from local breweries, perfect for beer lovers.",
+      "price": 5799,
+      "image": "https://example.com/images/craft_beer.jpg"
+    },
+    {
+      "title": "Family Fun Snack Basket",
+      "description": "Loaded with a variety of snacks and treats for the whole family to enjoy.",
+      "price": 2899,
+      "image": "https://example.com/images/family_fun_snack.jpg"
+    },
+    {
+      "title": "Fruit & Nut Delight Hamper",
+      "description": "A healthy and delicious mix of premium dried fruits and roasted nuts.",
+      "price": 2499,
+      "image": "https://example.com/images/fruit_nut_delight.jpg"
+    },
+    {
+      "title": "Baby Shower Gift Basket",
+      "description": "A thoughtful gift set for new parents, including baby clothes, toys, and baby care essentials.",
+      "price": 6599,
+      "image": "https://example.com/images/baby_shower.jpg"
+    },
+    {
+      "title": "Pet Lover's Gift Box",
+      "description": "A fun box of treats and toys for pet lovers and their furry friends.",
+      "price": 2899,
+      "image": "https://example.com/images/pet_lovers.jpg"
+    },
+    {
+      "title": "Romantic Evening Hamper",
+      "description": "Perfect for couples, this hamper includes chocolates, wine, and candles for a romantic evening.",
+      "price": 6199,
+      "image": "https://example.com/images/romantic_evening.jpg"
+    },
+    {
+      "title": "New Year's Celebration Box",
+      "description": "Celebrate the New Year with champagne, party favors, and snacks.",
+      "price": 8199,
+      "image": "https://example.com/images/new_years_celebration.jpg"
+    },
+    {
+      "title": "Artisan Coffee Basket",
+      "description": "A delightful selection of artisan coffees from around the world, perfect for coffee enthusiasts.",
+      "price": 4499,
+      "image": "https://example.com/images/artisan_coffee.jpg"
+    },
+    {
+      "title": "Relaxation Spa Set",
+      "description": "This spa set includes bath salts, candles, and a plush robe for the ultimate relaxation experience.",
+      "price": 6899,
+      "image": "https://example.com/images/relaxation_spa.jpg"
+    },
+    {
+      "title": "Cheese & Cracker Hamper",
+      "description": "A gourmet assortment of cheeses, crackers, and spreads, perfect for snacking and entertaining.",
+      "price": 3299,
+      "image": "https://example.com/images/cheese_cracker.jpg"
+    },
+    {
+      "title": "Holiday Cheers Gift Basket",
+      "description": "Celebrate the holidays with a mix of festive treats, including mulled wine mix, chocolates, and spiced nuts.",
+      "price": 5399,
+      "image": "https://example.com/images/holiday_cheers.jpg"
+    },
+    {
+      "title": "Miniature Whiskey Tasting Set",
+      "description": "A curated collection of miniature whiskey bottles for tasting and exploring unique flavors.",
+      "price": 4099,
+      "image": "https://example.com/images/whiskey_tasting.jpg"
+    },
+    {
+      "title": "Summer Picnic Hamper",
+      "description": "Everything you need for a summer picnic, including snacks, a picnic blanket, and utensils.",
+      "price": 3699,
+      "image": "https://example.com/images/summer_picnic.jpg"
+    },
+    {
+      "title": "Gardener's Essentials Basket",
+      "description": "A lovely set of gardening tools, gloves, seeds, and organic plant food for garden enthusiasts.",
+      "price": 2899,
+      "image": "https://example.com/images/gardeners_essentials.jpg"
+    },
+    {
+      "title": "Fitness Fuel Hamper",
+      "description": "Packed with protein bars, shakes, and supplements for fitness lovers and gym-goers.",
+      "price": 4999,
+      "image": "https://example.com/images/fitness_fuel.jpg"
+    },
+    {
+      "title": "Romantic Picnic Basket",
+      "description": "Perfect for a romantic outdoor date, featuring gourmet snacks, a bottle of wine, and picnic essentials.",
+      "price": 5799,
+      "image": "https://example.com/images/romantic_picnic.jpg"
+    },
+    {
+      "title": "Nature Lover's Gift Set",
+      "description": "Includes eco-friendly products such as reusable water bottles, bamboo utensils, and natural skincare.",
+      "price": 2499,
+      "image": "https://example.com/images/nature_lovers.jpg"
+    },
+    {
+      "title": "Kids' Activity Hamper",
+      "description": "Filled with fun activities for kids, including coloring books, crayons, puzzles, and snacks.",
+      "price": 2899,
+      "image": "https://example.com/images/kids_activity.jpg"
+    }
+  ]
+  

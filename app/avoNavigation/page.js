@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import "./Navigation.css";
-import AvoLogo from "../Images/AvoLogo.png";
 
 export default function AvoNavigation() {
     const Links = [
@@ -11,38 +10,39 @@ export default function AvoNavigation() {
         {
             name: "About",
             path: "/about",
-            dropdown:[
-                {name:"our vision", path:"/about/vision",
-                    dropdown:[
-                        {name:"goal", path:"/about/vision/goal"},
-                        {name:"plans", path:"/about/vision/plans"},
+            dropdown: [
+                {
+                    name: "Vision", path: "/about/vision",
+                    dropdown: [
+                        { name: "goal", path: "/about/vision/goal" },
+                        { name: "plans", path: "/about/vision/plans" },
                     ]
                 },
-                {name:"our client", path:"/about/client"},
+                { name: "Clients", path: "/about/client" },
             ]
         },
         {
             name: "Services",
             path: "/services",
             dropdown: [
-                { 
-                    name: "Hampers", 
+                {
+                    name: "Hampers",
                     path: "/services/hampers",
                     dropdown: [
                         { name: "Bookey", path: "/services/hampers/bookey" },
                         { name: "Bookey", path: "/services/hampers/bookey" },
                     ]
                 },
-                { name: "products",path: "/services/products",
-                    dropdown:[
-                        { name: "sweets", path: "/services/products/sweets"},
-                        { name: "choclate",path:"/services/products/choclate"},
+                {
+                    name: "Products", path: "/services/products",
+                    dropdown: [
+                        { name: "sweets", path: "/services/products/sweets" },
+                        { name: "choclate", path: "/services/products/choclate" },
                     ]
                 },
-                { name: "Hampers", path: "/services/hampers" },
-                { name: "Hampers", path: "/services/hampers" },
-                
-                
+
+
+
             ]
         },
         {
@@ -55,7 +55,9 @@ export default function AvoNavigation() {
         <navbar>
             <div className="NavigationContainer">
                 <div className="LogoContainer">
-                    <Image src={AvoLogo} alt="Avo Logo" />
+                    <a href='/'>
+                        <Image src="/images/AvoLogo.png" width={100} height={5} alt="Avo Logo" />
+                    </a>
                 </div>
 
                 <div className="NavigationLinksContainer">
@@ -91,11 +93,14 @@ export default function AvoNavigation() {
                         )
                     ))}
                 </div>
-
-                <div className="extrabtnContainer">
-                    {/* Extra button here */}
+                <div className='mobileNavigationBar'>
+                    <div className='menuButton'>
+                        <Image src="/images/menu-regular-24.png" width={24} height={24} alt='Menu Icon'></Image>
+                    </div>
                 </div>
             </div>
+
         </navbar>
+
     );
 }
