@@ -26,6 +26,7 @@ body {
 
 section {
   padding: 6rem 4.7rem;
+  padding-bottom: 0px !important;
 }
 
 .CommonHeading {
@@ -47,14 +48,17 @@ section {
   border-radius: 30px;
   padding: 10px 50px;
   font-weight: 600;
-  transition: transform 0.1s ease;
+  transition: 0.5;
+  text-transform: uppercase;
+  font-size: 10px;
 }
 
 .AnimatedCommonBtn:hover {
   background-color: #273730;
   color: white;
   border: 1px solid black;
-  border-radius: 30px;
+  border-radius: 15px;
   padding: 10px 50px;
-  transition: transform 0.1s ease;
+  transition: 0.5;
+  font-size: 10px;
 }

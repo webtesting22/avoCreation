@@ -2,6 +2,10 @@
 import React, { useState } from "react";
 import "./CommonTagline.css"
 import { Row, Col } from "antd";
+import { IoGiftSharp } from "react-icons/io5";
+import { FaUserAlt } from "react-icons/fa";
+import { VscSettings } from "react-icons/vsc";
+
 const BestProduct = () => {
     const [position, setPosition] = useState({ x: 0, y: 0 });
 
@@ -21,15 +25,18 @@ const BestProduct = () => {
 
     const CardContentData = [
         {
-            title: "Space Planning",
+            title: "Occasion-Based Hampers",
+            icon: <IoGiftSharp />,
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan urna eu pharetra elementum."
         },
         {
-            title: "Custom Furniture",
+            title: "Personalized Consultation",
+            icon: <FaUserAlt />,
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan urna eu pharetra elementum"
         },
         {
-            title: "Furniture Layouts",
+            title: "Customization Expertise",
+            icon: <VscSettings />,
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan urna eu pharetra elementum."
         }
     ]
@@ -50,7 +57,7 @@ const BestProduct = () => {
                                 transform: `translate(${position.x * 0.1}px, ${position.y * 0.1}px)`,
                             }}
                         >
-                            Hellooooo
+                            view All
                         </button>
                     </div>
                 </div>
@@ -58,9 +65,29 @@ const BestProduct = () => {
                     <Row>
                         {CardContentData.map((item, index) => (
                             <Col lg={8} key={index}>
-                                <div style={{ backgroundColor: "red", height: "50vh", width: "100%" }}>
-                                    <h1>{item.title}</h1>
-                                    <p>{item.description}</p>
+                                <div id="BestCategoriesCard">
+                                    <div id="FillColorAnimation">
+
+                                    </div>
+                                    <div style={{ position: "sticky" }}>
+                                        <div id="IconContainer">
+                                            {item.icon}
+                                        </div>
+                                        <h1>{item.title}</h1>
+                                        <p>{item.description}</p>
+                                        <br /><br />
+                                        <button
+                                            className="AnimatedCommonBtn"
+                                            onMouseMove={handleMouseMove}
+                                            onMouseLeave={handleMouseLeave}
+                                            style={{
+                                                transform: `translate(${position.x * 0.1}px, ${position.y * 0.1}px)`,
+                                            }}
+                                        >
+                                            Schedule a call
+                                        </button>
+                                        <br /><br />
+                                    </div>
                                 </div>
                             </Col>
                         ))}
