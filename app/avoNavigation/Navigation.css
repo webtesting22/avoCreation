@@ -1,117 +1,140 @@
-.NavigationContainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #273631;
+#AnimatedAvoNavigationContainer {
+    width: 100%;
+    background-color: transparent;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px !important;
+    position: fixed;
+    top: 0px;
+    z-index: 5;
 }
 
-.LogoContainer img {
-  width: 100px;
+#NavigationContainer {
+    /* height: 10vh; */
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
 }
 
-.NavigationLinksContainer {
-  display: flex;
-  align-items: center;
+#LogoContainer img {
+    width: 120px;
 }
 
-.navLink {
-  color: white;
-  text-decoration: none;
-  padding: 10px;
-  margin-right: 20px;
-  position: relative;
-  display: inline-block;
-  transform-style: preserve-3d;
-  transition: transform 0.3s ease;
+#SecondContainer {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 0px 20px;
 }
 
-.navLink:hover {
-  text-decoration: underline;
-  /* transform: rotateX(35deg); */
+#FirstContainer {
+    display: flex;
+    width: 40%;
+    background-color: #273730;
+    /* padding: 10px; */
+    align-items: center;
+    position: sticky;
+    z-index: 5555;
 }
 
-.navItemWithDropdown {
-  position: relative;
+#FirstContainer div:first-child {
+    width: 100%;
+    padding: 10px;
+
 }
 
-.dropdownMenu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #273631;
-  border-radius: 8px;
-  padding: 10px 0;
-  list-style: none;
-  min-width: 150px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  z-index: 1;
+#FirstContainer div:last-child {
+    border-left: 1px solid #2e4139;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 13px;
 }
 
-.dropdownMenu .dropdownItem {
-  color: white;
-  padding: 10px 20px;
-  border-radius: 8px;
-  display: block;
-  text-decoration: none;
+#FirstContainer div:last-child svg {
+    font-size: 40px;
 }
 
-.dropdownMenu .dropdownItem:hover {
-  background-color: #4e9090;
-  text-decoration: underline;
+@keyframes slideDown {
+    0% {
+        top: -50vh;
+        /* Start position above the viewport */
+    }
+
+    30% {
+        top: -10vh;
+        /* Move slowly down */
+    }
+
+    100% {
+        top: 0;
+        /* Complete the slide down */
+    }
 }
 
-.submenu {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 100%;
-  background-color: #273631;
-  border-radius: 8px;
-  padding: 10px 0;
-  list-style: none;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  
+/* Keyframe animation for controlled reverse speed (closing) */
+@keyframes slideUp {
+    0% {
+        top: 0;
+        /* Start at the bottom */
+    }
+
+    30% {
+        top: -10vh;
+        /* Move slowly up */
+    }
+
+    100% {
+        top: -50vh;
+        /* End above the viewport */
+    }
 }
 
-.submenu .submenuItem {
-  color: white;
-  padding: 10px 20px;
-  border-radius: 8px;
-  display: block;
-  text-decoration: none;
-  
+/* Panel container initial hidden state */
+#NavigationMegapanelContainer {
+    background-color: #2b3d35;
+    position: absolute;
+    top: -50vh;
+    /* Initial hidden position */
+    height: 50vh;
+    width: 90%;
+    overflow: hidden;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
 }
 
-.submenu .submenuItem:hover {
-  background-color: #4e9090;
-  text-decoration: underline;
+/* Apply the slide down animation when menu is open */
+#NavigationMegamenupanel.show #NavigationMegapanelContainer {
+    animation-name: slideDown;
 }
 
-.navItemWithDropdown:hover .dropdownMenu {
-  display: block;
-  
+/* Apply the slide up animation when menu is closed */
+#NavigationMegamenupanel.hide #NavigationMegapanelContainer {
+    animation-name: slideUp;
 }
 
-.dropdownItemWithSubmenu:hover .submenu {
-  display: block;
-  z-index: 1000;
+/* Styling for the menu and close icons */
+.MenuButton svg {
+    font-size: 40px;
+    cursor: pointer;
 }
-.mobileNavigationBar{
-  display: none;
+
+#NavigationMegamenupanel {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
 }
-.menuButton{
-  display: none;
+
+#SecondContainer ul{
+    display: flex;
 }
-@media (max-width:769px) {
-  .NavigationLinksContainer{
-    display: none;
-  }
-  .mobileNavigationBar{
-    display: block;
-  }
-  .menuButton{
-    display: block;
-  }
+#SecondContainer ul li{
+    padding: 0px 20px;
+    text-transform: uppercase;
 }

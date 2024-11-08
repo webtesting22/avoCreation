@@ -1,106 +1,65 @@
+"use client"
 import Image from 'next/image';
+import React, { useState } from "react";
+import { IoIosMenu, IoIosClose } from "react-icons/io";  // Add close icon
+
 import "./Navigation.css";
 
-export default function AvoNavigation() {
-    const Links = [
+const AvoNavigation = () => {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
+    const NavigationsLinks = [
         {
-            name: "Home",
-            path: "/home"
+            Links: "About"
         },
         {
-            name: "About",
-            path: "/about",
-            dropdown: [
-                {
-                    name: "Vision", path: "/about/vision",
-                    dropdown: [
-                        { name: "goal", path: "/about/vision/goal" },
-                        { name: "plans", path: "/about/vision/plans" },
-                    ]
-                },
-                { name: "Clients", path: "/about/client" },
-            ]
+            Links: "Projects"
         },
         {
-            name: "Services",
-            path: "/services",
-            dropdown: [
-                {
-                    name: "Hampers",
-                    path: "/services/hampers",
-                    dropdown: [
-                        { name: "Bookey", path: "/services/hampers/bookey" },
-                        { name: "Bookey", path: "/services/hampers/bookey" },
-                    ]
-                },
-                {
-                    name: "Products", path: "/services/products",
-                    dropdown: [
-                        { name: "sweets", path: "/services/products/sweets" },
-                        { name: "choclate", path: "/services/products/choclate" },
-                    ]
-                },
-
-
-
-            ]
+            Links: "Contact"
         },
-        {
-            name: "Contact",
-            path: "/contact"
-        }
-    ];
+    ]
 
     return (
-        <navbar>
-            <div className="NavigationContainer">
-                <div className="LogoContainer">
-                    <a href='/'>
-                        <Image src="/images/AvoLogo.png" width={100} height={5} alt="Avo Logo" />
-                    </a>
-                </div>
+        <>
+            <section id="AnimatedAvoNavigationContainer">
+                <div id="NavigationContainer">
+                    <div id="FirstContainer">
+                        <div id="LogoContainer">
+                            <img src="./images/AvoLogo-removebg-preview.png" alt="Avo Logo" />
+                        </div>
+                        <div onClick={toggleMenu} className="MenuButton">
+                            {isMenuOpen ? (
+                                <IoIosClose style={{ color: "white" }} />
+                            ) : (
+                                <IoIosMenu style={{ color: "white" }} />
+                            )}
+                        </div>
+                    </div>
+                    <div id="SecondContainer">
+                        <ul>
+                            {NavigationsLinks.map((item, index) => (
+                                <li key={index}>
+                                    {item.Links}
+                                </li>
+                            ))}
 
-                <div className="NavigationLinksContainer">
-                    {Links.map((link, index) => (
-                        link.dropdown ? (
-                            <div key={index} className="navItemWithDropdown">
-                                <a href={link.path} className="navLink">
-                                    {link.name}
-                                </a>
-                                <div className="dropdownMenu">
-                                    {link.dropdown.map((dropdownItem, dropdownIndex) => (
-                                        <div key={dropdownIndex} className="dropdownItemWithSubmenu">
-                                            <a href={dropdownItem.path} className="dropdownItem">
-                                                {dropdownItem.name}
-                                            </a>
-                                            {dropdownItem.dropdown && (
-                                                <div className="submenu">
-                                                    {dropdownItem.dropdown.map((subItem, subIndex) => (
-                                                        <a key={subIndex} href={subItem.path} className="submenuItem">
-                                                            {subItem.name}
-                                                        </a>
-                                                    ))}
-                                                </div>
-                                            )}
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                        ) : (
-                            <a key={index} href={link.path} className="navLink">
-                                {link.name}
-                            </a>
-                        )
-                    ))}
-                </div>
-                <div className='mobileNavigationBar'>
-                    <div className='menuButton'>
-                        <Image src="/images/menu-regular-24.png" width={24} height={24} alt='Menu Icon'></Image>
+                        </ul>
                     </div>
                 </div>
-            </div>
-
-        </navbar>
-
+                <div
+                    id="NavigationMegamenupanel"
+                    className={isMenuOpen ? "show" : "hide"}
+                >
+                    <div id="NavigationMegapanelContainer"></div>
+                </div>
+            </section>
+        </>
     );
-}
+};
+
+export default AvoNavigation;

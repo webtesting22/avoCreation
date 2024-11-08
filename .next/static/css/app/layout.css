@@ -1,6 +1,149 @@
-/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[3].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[3].use[2]!./node_modules/next/font/local/target.css?{"path":"app\\layout.js","import":"","arguments":[{"src":"./fonts/GeistVF.woff","variable":"--font-geist-sans","weight":"100 900"}],"variableName":"geistSans"} ***!
-  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./app/avoNavigation/Navigation.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************/
+#AnimatedAvoNavigationContainer {
+    width: 100%;
+    background-color: transparent;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px !important;
+    position: fixed;
+    top: 0px;
+    z-index: 5;
+}
+
+#NavigationContainer {
+    /* height: 10vh; */
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#LogoContainer img {
+    width: 120px;
+}
+
+#SecondContainer {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 0px 20px;
+}
+
+#FirstContainer {
+    display: flex;
+    width: 40%;
+    background-color: #273730;
+    /* padding: 10px; */
+    align-items: center;
+    position: sticky;
+    z-index: 5555;
+}
+
+#FirstContainer div:first-child {
+    width: 100%;
+    padding: 10px;
+
+}
+
+#FirstContainer div:last-child {
+    border-left: 1px solid #2e4139;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 13px;
+}
+
+#FirstContainer div:last-child svg {
+    font-size: 40px;
+}
+
+@keyframes slideDown {
+    0% {
+        top: -50vh;
+        /* Start position above the viewport */
+    }
+
+    30% {
+        top: -10vh;
+        /* Move slowly down */
+    }
+
+    100% {
+        top: 0;
+        /* Complete the slide down */
+    }
+}
+
+/* Keyframe animation for controlled reverse speed (closing) */
+@keyframes slideUp {
+    0% {
+        top: 0;
+        /* Start at the bottom */
+    }
+
+    30% {
+        top: -10vh;
+        /* Move slowly up */
+    }
+
+    100% {
+        top: -50vh;
+        /* End above the viewport */
+    }
+}
+
+/* Panel container initial hidden state */
+#NavigationMegapanelContainer {
+    background-color: #2b3d35;
+    position: absolute;
+    top: -50vh;
+    /* Initial hidden position */
+    height: 50vh;
+    width: 90%;
+    overflow: hidden;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+/* Apply the slide down animation when menu is open */
+#NavigationMegamenupanel.show #NavigationMegapanelContainer {
+    animation-name: slideDown;
+}
+
+/* Apply the slide up animation when menu is closed */
+#NavigationMegamenupanel.hide #NavigationMegapanelContainer {
+    animation-name: slideUp;
+}
+
+/* Styling for the menu and close icons */
+.MenuButton svg {
+    font-size: 40px;
+    cursor: pointer;
+}
+
+#NavigationMegamenupanel {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+#SecondContainer ul{
+    display: flex;
+}
+#SecondContainer ul li{
+    padding: 0px 20px;
+    text-transform: uppercase;
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[3].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[3].use[2]!./node_modules/next/font/local/target.css?{"path":"app/layout.js","import":"","arguments":[{"src":"./fonts/GeistVF.woff","variable":"--font-geist-sans","weight":"100 900"}],"variableName":"geistSans"} ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 @font-face {
 font-family: 'geistSans';
 src: url(/_next/static/media/4473ecc91f70f139-s.p.woff) format('woff');
@@ -11,9 +154,9 @@ font-weight: 100 900;
 }.__variable_1e4310 {--font-geist-sans: 'geistSans', 'geistSans Fallback'
 }
 
-/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[3].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[3].use[2]!./node_modules/next/font/local/target.css?{"path":"app\\layout.js","import":"","arguments":[{"src":"./fonts/GeistMonoVF.woff","variable":"--font-geist-mono","weight":"100 900"}],"variableName":"geistMono"} ***!
-  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[3].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[3].use[2]!./node_modules/next/font/local/target.css?{"path":"app/layout.js","import":"","arguments":[{"src":"./fonts/GeistMonoVF.woff","variable":"--font-geist-mono","weight":"100 900"}],"variableName":"geistMono"} ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 @font-face {
 font-family: 'geistMono';
 src: url(/_next/static/media/463dafcda517f24f-s.p.woff) format('woff');
@@ -521,6 +664,15 @@ video {
 [hidden]:where(:not([hidden="until-found"])) {
   display: none;
 }
+.relative {
+  position: relative;
+}
+.hidden {
+  display: none;
+}
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
 .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -548,126 +700,37 @@ body {
 }
 
 
-section{
-  padding: 3rem 2rem;
-}
-/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./app/avoNavigation/Navigation.css ***!
-  \******************************************************************************************************************************************************************************************************************************************************************************/
-.NavigationContainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #273631;
+section {
+  padding: 6rem 4.7rem;
 }
 
-.LogoContainer img {
-  width: 100px;
+.CommonHeading {
+  font-size: 45px;
+  font-weight: 600;
+  padding: 5px 0px;
 }
 
-.NavigationLinksContainer {
-  display: flex;
-  align-items: center;
+.CommonTagline {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 14px;
 }
 
-.navLink {
+.AnimatedCommonBtn {
+  background-color: black;
   color: white;
-  text-decoration: none;
-  padding: 10px;
-  margin-right: 20px;
-  position: relative;
-  display: inline-block;
-  transform-style: preserve-3d;
-  transition: transform 0.3s ease;
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 10px 50px;
+  font-weight: 600;
+  transition: transform 0.1s ease;
 }
 
-.navLink:hover {
-  text-decoration: underline;
-  /* transform: rotateX(35deg); */
-}
-
-.navItemWithDropdown {
-  position: relative;
-}
-
-.dropdownMenu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #273631;
-  border-radius: 8px;
-  padding: 10px 0;
-  list-style: none;
-  min-width: 150px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  z-index: 1;
-}
-
-.dropdownMenu .dropdownItem {
+.AnimatedCommonBtn:hover {
+  background-color: #273730;
   color: white;
-  padding: 10px 20px;
-  border-radius: 8px;
-  display: block;
-  text-decoration: none;
-}
-
-.dropdownMenu .dropdownItem:hover {
-  background-color: #4e9090;
-  text-decoration: underline;
-}
-
-.submenu {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 100%;
-  background-color: #273631;
-  border-radius: 8px;
-  padding: 10px 0;
-  list-style: none;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  
-}
-
-.submenu .submenuItem {
-  color: white;
-  padding: 10px 20px;
-  border-radius: 8px;
-  display: block;
-  text-decoration: none;
-  
-}
-
-.submenu .submenuItem:hover {
-  background-color: #4e9090;
-  text-decoration: underline;
-}
-
-.navItemWithDropdown:hover .dropdownMenu {
-  display: block;
-  
-}
-
-.dropdownItemWithSubmenu:hover .submenu {
-  display: block;
-  z-index: 1000;
-}
-.mobileNavigationBar{
-  display: none;
-}
-.menuButton{
-  display: none;
-}
-@media (max-width:769px) {
-  .NavigationLinksContainer{
-    display: none;
-  }
-  .mobileNavigationBar{
-    display: block;
-  }
-  .menuButton{
-    display: block;
-  }
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 10px 50px;
+  transition: transform 0.1s ease;
 }

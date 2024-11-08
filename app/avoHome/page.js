@@ -1,60 +1,37 @@
 "use client"; // <===== REQUIRED
 import Image from "next/image";
-// import Gift1 from "images/gift1.jpg";
-// import Gift2 from "images/gift2.jpg";
-// import Gift3 from "../Images/gift3.jpg";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectFade, Autoplay, Pagination, Navigation } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import 'swiper/css/effect-fade';
-import "./home.css"
+import React, { useEffect, useState } from "react";
+import "./AvoHome.css";
+
 export default function AvoHome() {
+    const [navHeight, setNavHeight] = useState(0); // Initialize with 0 for hidden
+
+    useEffect(() => {
+        const handleScroll = () => {
+            // Calculate scroll-based height, maxing out at 8vh
+            const newHeight = Math.min(window.scrollY / 3, window.innerHeight * 0.08);
+            setNavHeight(newHeight);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
     return (
-
-        <div>
-            <Swiper
-                centeredSlides={true}
-                effect={'fade'}
-                pagination={{
-                    clickable: true,
-                }}
-                autoplay={{
-                    delay: 3000,
-                }}
-                modules={[EffectFade, Autoplay, Pagination]}
-                className="mySwiper"
+        <div id="AvoHomeHeroMainContainer">
+            <div
+                id="TopNavContainerSet"
+                style={{ height: `${navHeight}px` }} // Dynamic height based on scroll
             >
-                <SwiperSlide>
-                    <div className="homeImageContainer">
-                        <Image src="/images/Gift Wrap _ Add-On.jpeg" width={1000} height={100} alt="Product 1" />
-                    </div>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                    <div className="homeImageContainer">
-                        <Image src="/images/Loved and Found _ Custom and Curated Gift Boxes.jpeg" width={1000} height={100} alt="Product 2" />
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="homeImageContainer">
-                        <Image src="/images/gift6.png" width={1000} height={100} alt="Product 4" />
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="homeImageContainer">
-                        <Image src="/images/gift11.png" width={1000} height={100} alt="Product 3" />
-                    </div>
-                </SwiperSlide>
-
-            </Swiper>
-            <div>
-                <h1>Welcome To Avo Curations.</h1>
-                <p>Unwrap Joy, Share Moments – Perfect Gift Hampers for Every Occasion!</p>
+            </div>
+            <div id="BottomContainer">
+                <div id="LeftSideBottomContainer">
+                    <div></div>
+                    <div></div>
+                </div>
             </div>
         </div>
-
-
     );
 }

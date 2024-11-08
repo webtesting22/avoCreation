@@ -24,6 +24,37 @@ body {
 }
 
 
-section{
-  padding: 3rem 2rem;
+section {
+  padding: 6rem 4.7rem;
+}
+
+.CommonHeading {
+  font-size: 45px;
+  font-weight: 600;
+  padding: 5px 0px;
+}
+
+.CommonTagline {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.AnimatedCommonBtn {
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 10px 50px;
+  font-weight: 600;
+  transition: transform 0.1s ease;
+}
+
+.AnimatedCommonBtn:hover {
+  background-color: #273730;
+  color: white;
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 10px 50px;
+  transition: transform 0.1s ease;
 }
