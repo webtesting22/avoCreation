@@ -201,10 +201,16 @@
 .MegaLinksContainer>div {
     padding: 20px 0px;
     border-bottom: 1px solid #e2e7f1;
+    display: flex;
+    justify-content: space-between;
 }
 .MegaLinksContainer>div h3{
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 600;
+}
+.MegaLinksContainer>div p{
+    letter-spacing: 5px;
+    font-size: 12px;
 }
 /*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[3].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[3].use[2]!./node_modules/next/font/local/target.css?{"path":"app/layout.js","import":"","arguments":[{"src":"./fonts/GeistVF.woff","variable":"--font-geist-sans","weight":"100 900"}],"variableName":"geistSans"} ***!

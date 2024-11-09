@@ -198,8 +198,14 @@
 .MegaLinksContainer>div {
     padding: 20px 0px;
     border-bottom: 1px solid #e2e7f1;
+    display: flex;
+    justify-content: space-between;
 }
 .MegaLinksContainer>div h3{
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 600;
+}
+.MegaLinksContainer>div p{
+    letter-spacing: 5px;
+    font-size: 12px;
 }

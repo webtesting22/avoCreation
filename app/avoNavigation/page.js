@@ -112,6 +112,7 @@ const AvoNavigation = () => {
                                             {hampersProducts.slice(0, 3).map((item, index) => (
                                                 <div key={index}>
                                                     <h3>{item.name}</h3>
+                                                    <p>{item.category}</p>
                                                 </div>
                                             ))}
                                         </div>
@@ -137,6 +138,7 @@ const AvoNavigation = () => {
                                             {hampersProducts.slice(0, 3).map((item, index) => (
                                                 <div key={index}>
                                                     <h3>{item.name}</h3>
+                                                    <p>{item.category}</p>
                                                 </div>
                                             ))}
                                         </div>
@@ -161,6 +163,7 @@ const AvoNavigation = () => {
                                             {hampersProducts.slice(0, 3).map((item, index) => (
                                                 <div key={index}>
                                                     <h3>{item.name}</h3>
+                                                    <p>{item.category}</p>
                                                 </div>
                                             ))}
                                         </div>
