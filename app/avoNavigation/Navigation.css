@@ -12,9 +12,10 @@
 
 #NavigationContainer {
     /* height: 10vh; */
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    padding: 0rem 4rem;
 }
 
 #LogoContainer img {
@@ -96,16 +97,17 @@
 
 /* Panel container initial hidden state */
 #NavigationMegapanelContainer {
-    background-color: #2b3d35;
+    /* background-color: white; */
     position: absolute;
     top: -50vh;
     /* Initial hidden position */
     height: 50vh;
-    width: 90%;
+    width: 100%;
     overflow: hidden;
     animation-duration: 2s;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
+    padding: 0rem 4rem;
 }
 
 /* Apply the slide down animation when menu is open */
@@ -146,18 +148,58 @@
     height: 100%;
     width: 100%;
     padding-top: 5rem;
-    /* background-color: red; */
+    background-color: #f3f6fc;
 }
 
 .InsideNavigationContainer div:first-child {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid #e2e7f1;
+    padding: 20px 0px;
+
 }
 
 .InsideNavigationContainer {
     width: 100%;
     padding: 20px;
     height: 100%;
-    border-right: 1px solid #30453c;
+    border-right: 1px solid #e2e7f1;
+}
+
+.InsideNavigationContainer .AnimatedCommonBtn {
+    background-color: transparent !important;
+    color: black;
+    border: 1px solid #e2e7f1 !important;
+    transition: .5s;
+}
+
+.InsideNavigationContainer .AnimatedCommonBtn:hover {
+    background-color: transparent !important;
+    color: #2e4139;
+    border: 1px solid #e2e7f1 !important;
+    transition: .2s;
+}
+
+.InsideNavigationContainer h2 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 12px;
+}
+
+.MegaLinksContainer {
+    /* height: 100%; */
+    width: 100%;
+    background-color: transparent;
+    /* padding: 20px 0px; */
+    overflow: auto;
+}
+
+.MegaLinksContainer>div {
+    padding: 20px 0px;
+    border-bottom: 1px solid #e2e7f1;
+}
+.MegaLinksContainer>div h3{
+    font-size: 20px;
+    font-weight: 600;
 }
