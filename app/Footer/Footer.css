@@ -1,0 +1,47 @@
+#FooterContainer {
+    background-color: #2e4139;
+    color: white;
+    padding: 0rem 4rem;
+}
+
+.ContainerHeading {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 12px;
+    padding: 20px;
+}
+
+.SocialIconsContainer {
+    padding-top: 94px;
+}
+
+.ShortNavigationLinksContainer {
+    padding-top: 2rem;
+}
+
+.ShortNavigationLinksContainer {
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+    height: 100%;
+    width: 100%;
+}
+
+.SocialContainer {
+    padding: 20px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.SocialContainer svg {
+    font-size: 20px;
+    /* background-color: black; */
+    /* border-radius: 50%; */
+    /* padding: 3px; */
+}
+
+.LogoAndBioContainer {
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+    height: 100%;
+    width: 100%;
+}

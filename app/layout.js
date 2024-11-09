@@ -2,6 +2,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import AvoNavigation from "./avoNavigation/page";
 import Script from "next/script";
+import Footer from "./Footer/page";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -34,6 +35,7 @@ export default function RootLayout({ children }) {
       >
         <AvoNavigation />
         {children}
+        <Footer/>
         <Script src="https://unpkg.com/aos@next/dist/aos.js" strategy="beforeInteractive" />
         <Script id="aos-init">{`AOS.init();`}</Script>
       </body>
