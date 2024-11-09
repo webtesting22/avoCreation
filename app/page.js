@@ -6,7 +6,7 @@ import ShowProductsHomepage from "./showProductsHome/page";
 
 export default function Home() {
   return (
-    <div style={{ height: "700vh" }}>
+    <div>
       <AvoHome />
       <BestProduct />
       <ShowProductsHomepage/>
