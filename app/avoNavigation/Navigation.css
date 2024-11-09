@@ -27,12 +27,12 @@
     color: white;
     padding: 0px 20px;
     position: sticky;
-    z-index: 5555;
+    /* z-index: 5555; */
 }
 
 #FirstContainer {
     display: flex;
-    width: 40%;
+    width: 33.3%;
     background-color: #273730;
     /* padding: 10px; */
     align-items: center;
@@ -133,10 +133,31 @@
     justify-content: center;
 }
 
-#SecondContainer ul{
+#SecondContainer ul {
     display: flex;
 }
-#SecondContainer ul li{
+
+#SecondContainer ul li {
     padding: 0px 20px;
     text-transform: uppercase;
+}
+
+.navigationpanel {
+    height: 100%;
+    width: 100%;
+    padding-top: 5rem;
+    /* background-color: red; */
+}
+
+.InsideNavigationContainer div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.InsideNavigationContainer {
+    width: 100%;
+    padding: 20px;
+    height: 100%;
+    border-right: 1px solid #30453c;
 }

@@ -1,8 +1,8 @@
 "use client"
 import Image from 'next/image';
-import React, { useState ,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { IoIosMenu, IoIosClose } from "react-icons/io";  // Add close icon
-
+import { Row, Col } from 'antd';
 import "./Navigation.css";
 
 const AvoNavigation = () => {
@@ -65,16 +65,54 @@ const AvoNavigation = () => {
                         </ul>
                     </div>
                     <div
-                id="TopNavContainerSet"
-                style={{ height: `${navHeight}px` }} // Dynamic height based on scroll
-            >
-            </div>
+                        id="TopNavContainerSet"
+                        style={{ height: `${navHeight}px` }} // Dynamic height based on scroll
+                    >
+                    </div>
                 </div>
                 <div
                     id="NavigationMegamenupanel"
                     className={isMenuOpen ? "show" : "hide"}
                 >
-                    <div id="NavigationMegapanelContainer"></div>
+                    <div id="NavigationMegapanelContainer">
+                        <div className='navigationpanel'>
+                            <Row style={{height:"100%"}}>
+                                <Col lg={8}>
+                                    <div className='InsideNavigationContainer'>
+                                        <div>
+                                            <h2> Our Categories</h2>
+                                            <button>heloo</button>
+                                        </div>
+                                        <div>
+
+                                        </div>
+                                    </div>
+                                </Col>
+                                <Col lg={8}>
+                                    <div className='InsideNavigationContainer'>
+                                        <div>
+                                            <h2> Our Categories</h2>
+                                            <button>heloo</button>
+                                        </div>
+                                        <div>
+
+                                        </div>
+                                    </div>
+                                </Col>
+                                <Col lg={8}>
+                                    <div className='InsideNavigationContainer'>
+                                        <div>
+                                            <h2> Our Categories</h2>
+                                            <button>heloo</button>
+                                        </div>
+                                        <div>
+
+                                        </div>
+                                    </div>
+                                </Col>
+                            </Row>
+                        </div>
+                    </div>
                 </div>
             </section>
         </>
