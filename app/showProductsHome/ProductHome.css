@@ -79,7 +79,7 @@
     position: absolute;
     top: 0px;
     padding-top: 3rem;
-  transition: 0.5s;
+    transition: 0.5s;
     transform: translatey(30px);
 }
 
@@ -100,6 +100,112 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  transition: 0.5s;
+    transition: 0.5s;
 
+}
+
+#AnimatedHoverCardContainer {
+    /* padding: 20px; */
+    height: 30vw;
+    overflow: hidden;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    position: relative;
+    transition: .5s;
+
+}
+
+.ProductsCardsContainer {
+    margin-top: 6rem;
+}
+
+#AnimatedHoverCardContainer .HoverOverlay {
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.43);
+    transition: .5s;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+#AnimatedHoverCardContainer:hover .HoverOverlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    /* right: 0px;
+    left: 0px;
+    bottom: 0px; */
+    background-color: rgba(0, 0, 0, 0.43);
+    transition: 0.5s;
+    border-radius: 0%;
+
+}
+
+#AnimatedHoverCardContainer .Heloos {
+    transition: .5s;
+    position: relative;
+    overflow: hidden;
+}
+
+#AnimatedHoverCardContainer:hover .Heloos {
+    /* height: 30vw; */
+    overflow: hidden;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    position: relative;
+    margin: 20px;
+    transition: .5s;
+}
+
+.CardContentContainer {
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.CardContentContainer>div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0rem;
+}
+
+.CardContentContainer h2 {
+    color: white;
+}
+
+.CardContentContainer h2:last-child {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.CardContentContainer h2:first-child {
+    letter-spacing: 5px;
+    font-size: 12px;
+}
+
+.CardContentContainer .AnimatedCommonBtn {
+    opacity: 0;
+    transform: translateY(30px) !important;
+    transition: 1s;
+    margin-top: 10px;
+}
+
+.CardContentContainer:hover .AnimatedCommonBtn {
+    opacity: 1;
+    transform: translateY(0px) !important;
+    transition: 1s;
 }

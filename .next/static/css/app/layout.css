@@ -29,6 +29,8 @@
     align-items: center;
     color: white;
     padding: 0px 20px;
+    position: sticky;
+    z-index: 5555;
 }
 
 #FirstContainer {
@@ -669,6 +671,9 @@ video {
 }
 .sticky {
   position: sticky;
+}
+.flex {
+  display: flex;
 }
 .hidden {
   display: none;
