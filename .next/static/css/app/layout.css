@@ -789,9 +789,9 @@ section {
 }
 
 .CommonTagline {
-  font-weight: 400;
   text-transform: uppercase;
-  font-size: 14px;
+  letter-spacing: 5px;
+  font-size: 12px;
 }
 
 .AnimatedCommonBtn {
@@ -803,7 +803,7 @@ section {
   font-weight: 600;
   transition: 0.5;
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .AnimatedCommonBtn:hover {
@@ -813,5 +813,5 @@ section {
   border-radius: 15px;
   padding: 10px 50px;
   transition: 0.5;
-  font-size: 10px;
+  font-size: 12px;
 }

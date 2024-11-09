@@ -64,10 +64,15 @@ const BestProduct = () => {
                 <div className="BestCategoriesShowContainer">
                     <Row>
                         {CardContentData.map((item, index) => (
-                            <Col lg={8} key={index}>
+                            <Col
+                                lg={8}
+                                key={index}
+                                data-aos="fade-up"
+                                data-aos-delay={index * 200} // Delay increases by 1 second for each item
+                                data-aos-duration="1000" // Animation duration (optional)
+                            >
                                 <div id="BestCategoriesCard">
                                     <div id="FillColorAnimation">
-
                                     </div>
                                     <div style={{ position: "sticky" }}>
                                         <div id="IconContainer">
@@ -91,9 +96,8 @@ const BestProduct = () => {
                                 </div>
                             </Col>
                         ))}
-
-
                     </Row>
+
                 </div>
             </section>
         </>

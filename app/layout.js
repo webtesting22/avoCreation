@@ -1,7 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import AvoNavigation from "./avoNavigation/page";
-import Head from "next/head";
+import Script from "next/script";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -20,20 +20,22 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-
   return (
     <html lang="en">
-    <Head>
-    <link
+      <head>
+        <link
           href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
           rel="stylesheet"
         />
-    </Head>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <AvoNavigation />
         {children}
+        <Script src="https://unpkg.com/aos@next/dist/aos.js" strategy="beforeInteractive" />
+        <Script id="aos-init">{`AOS.init();`}</Script>
       </body>
     </html>
   );

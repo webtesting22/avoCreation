@@ -96,7 +96,7 @@ const AvoNavigation = () => {
                                 <Col lg={8}>
                                     <div className='InsideNavigationContainer'>
                                         <div>
-                                            <h2> Our Categories</h2>
+                                            <h2 > Our Categories</h2>
                                             <button
                                                 className="AnimatedCommonBtn"
                                                 onMouseMove={handleMouseMove}
