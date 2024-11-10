@@ -9,6 +9,8 @@ import { FaFacebook } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import Link from 'next/link';  // This is Next.js' Link
+
 const AvoNavigation = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [navHeight, setNavHeight] = useState(0); // Initialize with 0 for hidden
@@ -44,18 +46,20 @@ const AvoNavigation = () => {
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
-
     const NavigationsLinks = [
         {
+            path: "/about",
             Links: "About"
         },
         {
+            path: "/",  // Fallback for missing path
             Links: "Projects"
         },
         {
+            path: "/",  // Fallback for missing path
             Links: "Contact"
-        },
-    ]
+        }
+    ];
 
     const SocialIconsdata = [
         {
@@ -86,7 +90,9 @@ const AvoNavigation = () => {
                 <div id="NavigationContainer">
                     <div id="FirstContainer">
                         <div id="LogoContainer">
-                            <img src="./images/AvoLogo-removebg-preview.png" alt="Avo Logo" />
+                            <Link href='/'>
+                                <img src="./images/AvoLogo-removebg-preview.png" alt="Avo Logo" />
+                            </Link>
                         </div>
                         <div onClick={toggleMenu} className="MenuButton">
                             {isMenuOpen ? (
@@ -99,11 +105,12 @@ const AvoNavigation = () => {
                     <div id="SecondContainer">
                         <ul>
                             {NavigationsLinks.map((item, index) => (
-                                <li key={index}>
-                                    {item.Links}
-                                </li>
+                                <Link key={index} href={item.path}>
+                                    <li>
+                                        {item.Links}
+                                    </li>
+                                </Link>
                             ))}
-
                         </ul>
                     </div>
                     <div
@@ -120,9 +127,9 @@ const AvoNavigation = () => {
                         <div className='navigationpanel'>
                             <div className='SocialIcons'>
                                 {SocialIconsdata.map((item, index) => (
-                                   <div key={index}>
-                                      {item.icon}
-                                   </div>
+                                    <div key={index}>
+                                        {item.icon}
+                                    </div>
                                 ))}
                             </div>
                             <Row style={{ height: "100%" }}>

@@ -66,6 +66,7 @@ const BestProduct = () => {
                         {CardContentData.map((item, index) => (
                             <Col
                                 lg={8}
+                                md={12}
                                 key={index}
                                 data-aos="fade-up"
                                 data-aos-delay={index * 200} // Delay increases by 1 second for each item

@@ -1,8 +1,219 @@
-
+"use client"
+import { useState, useRef } from "react";
+import "./AboutUs.css"
+import { FaArrowDownLong } from "react-icons/fa6";
+import { Row, Col } from "antd";
+import { IoGiftSharp } from "react-icons/io5";
+import { FaUserAlt } from "react-icons/fa";
+import { VscSettings } from "react-icons/vsc";
+import { FaGift } from "react-icons/fa";
+import { RiGift2Fill } from "react-icons/ri";
+import Marquee from 'react-fast-marquee';
+const giftPoints = [
+  "Elegant Packaging",
+  "Premium Quality",
+  "Personalized Messages",
+  "Eco-Friendly",
+  "Locally Sourced Products",
+  "Unique Selections",
+  "Customizable Hampers",
+  "Fast Delivery",
+  "Holiday Specials",
+  "Corporate Gifts",
+  "Birthday Surprises",
+  "Anniversary Specials",
+  "Wellness Hampers",
+  "Luxury Treats",
+  "Artisan Products",
+  "Family Hampers",
+  "Gift for Every Occasion",
+  "Thoughtful Selections",
+  "Delicious Treats",
+  "Beautiful Presentation",
+  "Quality Guaranteed",
+  "Customer Favorites",
+  "Handpicked Items",
+  "Exquisite Taste"
+];
 export default function page() {
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const topContainerRef = useRef(null);
+  const handleMouseMove = (e) => {
+    // Calculate position relative to the button center
+    const button = e.currentTarget;
+    const rect = button.getBoundingClientRect();
+    const x = e.clientX - rect.left - rect.width / 2;
+    const y = e.clientY - rect.top - rect.height / 2;
+    setPosition({ x, y });
+  };
+  const handleScrollToTopContainer = () => {
+    if (topContainerRef.current) {
+      topContainerRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  const handleMouseLeave = () => {
+    // Reset position when the mouse leaves the button
+    setPosition({ x: 0, y: 0 });
+  };
+  const CardContentData = [
+    {
+      title: "Occasion-Based Hampers",
+      icon: <IoGiftSharp />,
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan urna eu pharetra elementum."
+    },
+    {
+      title: "Personalized Consultation",
+      icon: <FaUserAlt />,
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan urna eu pharetra elementum"
+    },
+    {
+      title: "Customization Expertise",
+      icon: <VscSettings />,
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan urna eu pharetra elementum."
+    },
+    {
+      title: "Artful Packaging",
+      icon: <FaGift />,
+      description: "Stunning packaging that enhances the overall experience and aesthetics."
+    },
+    {
+      title: "Budget-Friendly & Size Options",
+      icon: <FaGift />,
+      description: "Luxurious hampers in a range of sizes and budgets, from compact to grand, to suit any occasion."
+    },
+    {
+      title: "Quality Assurance",
+      icon: <FaGift />,
+      description: "Only the finest, meticulously curated products make it into your hampers."
+    },
+    {
+      title: "Themed & Seasonal Collections",
+      icon: <FaGift />,
+      description: "Discover specialty hampers, from gourmet delights to spa indulgences, in exclusive collections inspired by each season’s latest trends."
+    },
+    {
+      title: "Local & International Products",
+      icon: <FaGift />,
+      description: "A blend of local artisanal treats and exotic global delicacies."
+    },
+    {
+      title: "Timely Delivery",
+      icon: <FaGift />,
+      description: "Reliable, punctual delivery for any occasion."
+    },
+    {
+      title: "Sustainability",
+      icon: <FaGift />,
+      description: "Eco-friendly packaging and locally sourced products for a sustainable choice."
+    }
+
+  ]
+
   return (
-    <div>
-      hey about
-    </div>
+    <>
+      <div id="AboutUsSection">
+        <div className="AboutUsContentContainer">
+          <div id="AboutBlackOvelay">
+
+          </div>
+          <div className="AdjustBothContainer">
+            <div className="TopContainerAbout">
+              <p>About Avo Curation</p>
+            </div>
+            <div className="BottomContainerAbout">
+              <div>
+                <h1>Gift <br /> Excellence</h1>
+                <br /><br />
+                <p>Unwrap Joy, Share Love</p>
+              </div>
+              <div>
+                <button
+                  className="AnimatedCommonBtn"
+                  onMouseMove={handleMouseMove}
+                  onMouseLeave={handleMouseLeave}
+                  onClick={handleScrollToTopContainer} // Add the onClick event here
+                  style={{
+                    transform: `translate(${position.x * 0.1}px, ${position.y * 0.1}px)`,
+                  }}
+                >
+                  <FaArrowDownLong />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="marquee-tag-container">
+        <Marquee gradient={false} speed={40}>
+          {giftPoints.map((point, index) => (
+            <div key={index} className="marquee-item">
+              <span className="green-dot"><RiGift2Fill /></span>
+              <span className="gift-point">{point}</span>
+            </div>
+          ))}
+        </Marquee>
+      </div>
+      <section ref={topContainerRef}>
+        <div id="TopContainer" >
+          <div>
+            <h1 className="CommonTagline">Show Family</h1>
+            <h2 className="CommonHeading">AVO Experience</h2>
+          </div>
+          <div>
+            <button
+              className="AnimatedCommonBtn"
+              onMouseMove={handleMouseMove}
+              onMouseLeave={handleMouseLeave}
+              style={{
+                transform: `translate(${position.x * 0.1}px, ${position.y * 0.1}px)`,
+              }}
+            >
+              view All
+            </button>
+          </div>
+        </div>
+
+        <div className="BestCategoriesShowContainer">
+          <Row>
+            {CardContentData.map((item, index) => (
+              <Col
+                lg={8}
+                md={12}
+                key={index}
+                data-aos="fade-up"
+                data-aos-delay={index * 200} // Delay increases by 1 second for each item
+                data-aos-duration="1000" // Animation duration (optional)
+              >
+                <div id="BestCategoriesCard">
+                  <div id="FillColorAnimation">
+                  </div>
+                  <div style={{ position: "sticky" }}>
+                    <div id="IconContainer">
+                      {item.icon}
+                    </div>
+                    <h1>{item.title}</h1>
+                    <p>{item.description}</p>
+                    <br /><br />
+                    <button
+                      className="AnimatedCommonBtn"
+                      onMouseMove={handleMouseMove}
+                      onMouseLeave={handleMouseLeave}
+                      style={{
+                        transform: `translate(${position.x * 0.1}px, ${position.y * 0.1}px)`,
+                      }}
+                    >
+                      Schedule a call
+                    </button>
+                    <br /><br />
+                  </div>
+                </div>
+              </Col>
+            ))}
+          </Row>
+
+        </div>
+        <br /><br /><br />
+      </section>
+    </>
   );
 }

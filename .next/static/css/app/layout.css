@@ -850,12 +850,124 @@ section {
   font-size: 12px;
 }
 
-@media (max-width:900px){
+@media (max-width:900px) {
 
-section {
-  padding: 6rem 1rem;
-  padding-bottom: 0px !important;
+  section {
+    padding: 6rem 1rem;
+    padding-bottom: 0px !important;
+  }
 }
+
+#TopNavContainerSet {
+  position: fixed;
+  top: 0px;
+  right: 64px;
+  width: 70%;
+  height: 0;
+  background-color: #273730;
+  overflow: hidden;
+  transition: height 0.3s ease;
+  z-index: -1;
+}
+
+
+
+/* ---------------animated CardAnimation------------------ */
+
+#TopContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 0rem;
+}
+
+#BestCategoriesCard {
+  background-color: white;
+  border: 1px solid rgb(239, 239, 239);
+  border-right: 0px !important;
+  /* min-height: 50vh; */
+  width: 100%;
+  position: relative;
+  transition: 1s;
+  padding: 30px;
+
+}
+
+#FillColorAnimation {
+  position: absolute;
+  height: 0px;
+  width: 0px;
+  right: 0px;
+  top: 0px;
+  background-color: #f3f6fc;
+  transition: 0.5s;
+  border-radius: 0px 0px 0px 200px;
+}
+
+#BestCategoriesCard:hover #FillColorAnimation {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  right: 0px;
+  top: 0px;
+  background-color: #f3f6fc;
+  transition: 0.5s;
+  border-radius: 0px 0px 0px 0px;
+}
+
+#BestCategoriesCard button {
+  /* background-color: transparent; */
+  color: black;
+  border: 1px solid rgb(232, 232, 232);
+  opacity: 0;
+  transform: translatey(40px) !important;
+  transition: 1s;
+}
+
+#BestCategoriesCard:hover button {
+  /* background-color: transparent; */
+  color: white;
+  border: 1px solid rgb(232, 232, 232);
+  opacity: 1;
+  transform: translatey(20px) !important;
+  transition: 1s;
+}
+
+#BestCategoriesCard h1 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+#BestCategoriesCard h1,
+#BestCategoriesCard p {
+  transform: translatey(40px) !important;
+  transition: 1s;
+
+}
+
+#BestCategoriesCard:hover h1,
+#BestCategoriesCard:hover p {
+  transform: translatey(0px) !important;
+  transition: 1s;
+}
+
+#IconContainer svg {
+  font-size: 30px;
+  opacity: 0.3;
+  background-color: transparent;
+  position: absolute;
+
+
+}
+
+#IconContainer {
+  padding: 20px;
+  background-color: #f3f6fc;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
 }
 /*!*******************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./app/Footer/Footer.css ***!
