@@ -5,6 +5,10 @@ import { IoIosMenu, IoIosClose } from "react-icons/io";  // Add close icon
 import { Row, Col } from 'antd';
 import "./Navigation.css";
 import hampersProducts from '../showProductsHome/ProductsData';
+import { FaFacebook } from "react-icons/fa";
+import { AiFillInstagram } from "react-icons/ai";
+import { FaTwitter } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 const AvoNavigation = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [navHeight, setNavHeight] = useState(0); // Initialize with 0 for hidden
@@ -53,7 +57,29 @@ const AvoNavigation = () => {
         },
     ]
 
-
+    const SocialIconsdata = [
+        {
+            icon: <FaFacebook />,
+            link: "Facebook",
+            title: "@Demo"
+        },
+        {
+            icon: <AiFillInstagram />,
+            link: "Instagram",
+            title: "@Demo"
+        },
+        {
+            icon: <FaTwitter />,
+            link: "Twitter",
+            title: "@Demo"
+        }
+        ,
+        {
+            icon: <FaLinkedin />,
+            link: "Linkedin",
+            title: "@Demo"
+        }
+    ]
     return (
         <>
             <section id="AnimatedAvoNavigationContainer">
@@ -92,6 +118,13 @@ const AvoNavigation = () => {
                 >
                     <div id="NavigationMegapanelContainer">
                         <div className='navigationpanel'>
+                            <div className='SocialIcons'>
+                                {SocialIconsdata.map((item, index) => (
+                                   <div key={index}>
+                                      {item.icon}
+                                   </div>
+                                ))}
+                            </div>
                             <Row style={{ height: "100%" }}>
                                 <Col lg={8}>
                                     <div className='InsideNavigationContainer'>

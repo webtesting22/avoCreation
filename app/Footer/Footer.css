@@ -31,6 +31,15 @@
     display: flex;
     gap: 10px;
     align-items: center;
+    transition: .5s;
+}
+.SocialContainer p{
+    transition: .5s;
+    cursor: pointer;
+}
+.SocialContainer:hover p{
+    transform: translateX(10px);
+    transition: .5s;
 }
 
 .SocialContainer svg {

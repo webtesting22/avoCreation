@@ -149,6 +149,7 @@
     width: 100%;
     padding-top: 5rem;
     background-color: #f3f6fc;
+    position: relative;
 }
 
 .InsideNavigationContainer div:first-child {
@@ -201,11 +202,34 @@
     display: flex;
     justify-content: space-between;
 }
-.MegaLinksContainer>div h3{
+
+.MegaLinksContainer>div h3 {
     font-size: 15px;
     font-weight: 600;
+    transition: .5s;
+    cursor: pointer;
 }
-.MegaLinksContainer>div p{
+
+.MegaLinksContainer div:hover h3 {
+    transform: translateX(10px);
+    transition: .5s;
+}
+
+.MegaLinksContainer>div p {
     letter-spacing: 5px;
     font-size: 12px;
+}
+
+.SocialIcons {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.SocialIcons div svg {
+    margin: 10px;
+    font-size: 20px;
 }

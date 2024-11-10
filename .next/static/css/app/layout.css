@@ -152,6 +152,7 @@
     width: 100%;
     padding-top: 5rem;
     background-color: #f3f6fc;
+    position: relative;
 }
 
 .InsideNavigationContainer div:first-child {
@@ -204,13 +205,36 @@
     display: flex;
     justify-content: space-between;
 }
-.MegaLinksContainer>div h3{
+
+.MegaLinksContainer>div h3 {
     font-size: 15px;
     font-weight: 600;
+    transition: .5s;
+    cursor: pointer;
 }
-.MegaLinksContainer>div p{
+
+.MegaLinksContainer div:hover h3 {
+    transform: translateX(10px);
+    transition: .5s;
+}
+
+.MegaLinksContainer>div p {
     letter-spacing: 5px;
     font-size: 12px;
+}
+
+.SocialIcons {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.SocialIcons div svg {
+    margin: 10px;
+    font-size: 20px;
 }
 /*!*************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./app/globals.css ***!
@@ -709,6 +733,42 @@ video {
 [hidden]:where(:not([hidden="until-found"])) {
   display: none;
 }
+.container {
+  width: 100%;
+}
+@media (min-width: 640px) {
+
+  .container {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+
+  .container {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+
+  .container {
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1536px) {
+
+  .container {
+    max-width: 1536px;
+  }
+}
+.visible {
+  visibility: visible;
+}
 .relative {
   position: relative;
 }
@@ -789,6 +849,14 @@ section {
   transition: 0.5;
   font-size: 12px;
 }
+
+@media (max-width:900px){
+
+section {
+  padding: 6rem 1rem;
+  padding-bottom: 0px !important;
+}
+}
 /*!*******************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./app/Footer/Footer.css ***!
   \*******************************************************************************************************************************************************************************************************************************************************************/
@@ -822,6 +890,15 @@ section {
     display: flex;
     gap: 10px;
     align-items: center;
+    transition: .5s;
+}
+.SocialContainer p{
+    transition: .5s;
+    cursor: pointer;
+}
+.SocialContainer:hover p{
+    transform: translateX(10px);
+    transition: .5s;
 }
 
 .SocialContainer svg {

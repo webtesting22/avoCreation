@@ -209,3 +209,21 @@
     transform: translateY(0px) !important;
     transition: 1s;
 }
+
+/* Parallax.css */
+.parallax-container {
+    position: relative;
+    overflow: hidden;
+height: 100vh;
+  }
+  
+  .parallax-image {
+    position: absolute;
+    top: -20%;
+    /* left: 10%; */
+    transform: translateX(-50%);
+    height: 100%;
+    width: 100%;
+    transition: transform 0.1s ease-out;
+  }
+  
