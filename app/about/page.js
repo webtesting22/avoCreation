@@ -144,15 +144,18 @@ export default function page() {
         </div>
       </div>
       <div className="marquee-tag-container">
-        <Marquee gradient={false} speed={40}>
-          {giftPoints.map((point, index) => (
-            <div key={index} className="marquee-item">
-              <span className="green-dot"><RiGift2Fill /></span>
-              <span className="gift-point">{point}</span>
-            </div>
-          ))}
-        </Marquee>
+  <Marquee gradient={false} speed={40}>
+    {giftPoints.map((point, index) => (
+      <div key={index} className="marquee-item">
+        <span className="green-dot"><RiGift2Fill /></span>
+        <span className={`gift-point ${index % 2 !== 0 ? 'odd' : ''}`}>
+          {point}
+        </span>
       </div>
+    ))}
+  </Marquee>
+</div>
+
       <section ref={topContainerRef}>
         <div id="TopContainer" >
           <div>

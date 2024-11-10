@@ -123,6 +123,12 @@
     text-transform: uppercase;
 }
 
+  
+  .gift-point.odd {
+    font-weight: 600;
+  }
+  
+
 .marquee-item:hover .gift-point {
     font-style: italic;
     font-weight: 600;
