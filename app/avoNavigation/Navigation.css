@@ -24,11 +24,10 @@
 
 #SecondContainer {
     display: flex;
-    align-items: center;
+    align-items:center;
     color: white;
     padding: 0px 20px;
     position: sticky;
-    /* z-index: 5555; */
 }
 
 #FirstContainer {
@@ -232,4 +231,28 @@
 .SocialIcons div svg {
     margin: 10px;
     font-size: 20px;
+}
+
+@media (max-width: 798px) {
+    #AnimatedAvoNavigationContainer{
+        width: 100%;
+        display: flex;
+    }
+    #NavigationContainer {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0rem;
+    }
+
+    #SecondContainer {
+        display: flex;
+        align-items: center;
+        color: white;
+        padding: 0px;
+        position: sticky;
+        
+    }
+     
+
 }

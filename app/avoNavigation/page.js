@@ -175,7 +175,7 @@ const AvoNavigation = () => {
                                             </button>
                                         </div>
                                         <div className='MegaLinksContainer'>
-                                            {hampersProducts.slice(0, 3).map((item, index) => (
+                                            {hampersProducts.slice(3, 6).map((item, index) => (
                                                 <div key={index}>
                                                     <h3>{item.name}</h3>
                                                     <p>{item.category}</p>
@@ -200,7 +200,7 @@ const AvoNavigation = () => {
                                             </button>
                                         </div>
                                         <div className='MegaLinksContainer'>
-                                            {hampersProducts.slice(0, 3).map((item, index) => (
+                                            {hampersProducts.slice(6, 7).map((item, index) => (
                                                 <div key={index}>
                                                     <h3>{item.name}</h3>
                                                     <p>{item.category}</p>

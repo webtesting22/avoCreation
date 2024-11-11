@@ -59,17 +59,17 @@ export default function page() {
     {
       title: "Occasion-Based Hampers",
       icon: <IoGiftSharp />,
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan urna eu pharetra elementum."
+      description: "Our occasion-based hampers are thoughtfully designed to elevate life’s special moments, from celebrations of love to expressions of comfort and appreciation."
     },
     {
       title: "Personalized Consultation",
       icon: <FaUserAlt />,
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan urna eu pharetra elementum"
+      description: ": We start with a conversation to understand your unique needs, budget preferences, and the essence of the occasion."
     },
     {
       title: "Customization Expertise",
       icon: <VscSettings />,
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan urna eu pharetra elementum."
+      description: "Personalization is at the heart of what we do. Tailor every detail, from products & packaging selection to personalized monograms and branding."
     },
     {
       title: "Artful Packaging",

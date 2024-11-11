@@ -27,17 +27,17 @@ const BestProduct = () => {
         {
             title: "Occasion-Based Hampers",
             icon: <IoGiftSharp />,
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan urna eu pharetra elementum."
+            description: "Curated hampers crafted with care, perfect for every occasion. Thoughtfully chosen, beautifully presented, and ready to delight."
         },
         {
             title: "Personalized Consultation",
             icon: <FaUserAlt />,
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan urna eu pharetra elementum"
+            description: "Expert guidance tailored just for you, every step of the way. Your goals, our insights – achieving success together."
         },
         {
             title: "Customization Expertise",
             icon: <VscSettings />,
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan urna eu pharetra elementum."
+            description: "Bringing your unique vision to life with precision and creativity. Customized solutions crafted to fit your style and needs."
         }
     ]
     return (
