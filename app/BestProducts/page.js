@@ -31,12 +31,12 @@ const BestProduct = () => {
         },
         {
             title: "Personalized Consultation",
-            icon: <FaUserAlt />,
+            icon: <IoGiftSharp />,
             description: "Expert guidance tailored just for you, every step of the way. Your goals, our insights – achieving success together."
         },
         {
             title: "Customization Expertise",
-            icon: <VscSettings />,
+            icon: <IoGiftSharp />,
             description: "Bringing your unique vision to life with precision and creativity. Customized solutions crafted to fit your style and needs."
         }
     ]
@@ -48,6 +48,7 @@ const BestProduct = () => {
                         <h1 className="CommonTagline">Show popular</h1>
                         <h2 className="CommonHeading">We do it best.</h2>
                     </div>
+                    <img src="https://webtesting-upload.vercel.app/assets/AvoAccessoriesOverlay-CBCd2_8N.png" alt="" className="OverlayLeafImage"/>
                     <div>
                         <button
                             className="AnimatedCommonBtn"
@@ -61,7 +62,7 @@ const BestProduct = () => {
                         </button>
                     </div>
                 </div>
-                <div className="BestCategoriesShowContainer">
+                {/* <div className="BestCategoriesShowContainer">
                     <Row>
                         {CardContentData.map((item, index) => (
                             <Col
@@ -99,7 +100,7 @@ const BestProduct = () => {
                         ))}
                     </Row>
 
-                </div>
+                </div> */}
             </section>
         </>
     )

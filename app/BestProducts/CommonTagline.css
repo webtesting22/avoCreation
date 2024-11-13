@@ -1,0 +1,11 @@
+#TopContainer{
+    position: relative;
+}
+
+.OverlayLeafImage{
+        position: absolute;
+        right: 0px;
+        width: 20%;
+        top: 0px;
+        opacity: 0.1;
+}

@@ -63,47 +63,47 @@ export default function page() {
     },
     {
       title: "Personalized Consultation",
-      icon: <FaUserAlt />,
+      icon: <IoGiftSharp />,
       description: "We start with a conversation to understand your unique needs, budget preferences, and the essence of the occasion."
     },
     {
       title: "Customization Expertise",
-      icon: <VscSettings />,
+      icon: <IoGiftSharp />,
       description: "Personalization is at the heart of what we do. Tailor every detail, from products & packaging selection to personalized monograms and branding."
     },
     {
       title: "Artful Packaging",
-      icon: <FaGift />,
+      icon: <IoGiftSharp />,
       description: "Stunning packaging that enhances the overall experience and aesthetics."
     },
     {
       title: "Budget-Friendly & Size Options",
-      icon: <FaGift />,
+      icon: <IoGiftSharp />,
       description: "Luxurious hampers in a range of sizes and budgets, from compact to grand, to suit any occasion."
     },
     {
       title: "Quality Assurance",
-      icon: <FaGift />,
+      icon: <IoGiftSharp />,
       description: "Only the finest, meticulously curated products make it into your hampers."
     },
     {
       title: "Themed & Seasonal Collections",
-      icon: <FaGift />,
+      icon: <IoGiftSharp />,
       description: "Discover specialty hampers, from gourmet delights to spa indulgences, in exclusive collections inspired by each season’s latest trends."
     },
     {
       title: "Local & International Products",
-      icon: <FaGift />,
+      icon: <IoGiftSharp />,
       description: "A blend of local artisanal treats and exotic global delicacies."
     },
     {
       title: "Timely Delivery",
-      icon: <FaGift />,
+      icon: <IoGiftSharp />,
       description: "Reliable, punctual delivery for any occasion."
     },
     {
       title: "Sustainability",
-      icon: <FaGift />,
+      icon: <IoGiftSharp />,
       description: "Eco-friendly packaging and locally sourced products for a sustainable choice."
     }
 

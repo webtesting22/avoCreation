@@ -106,7 +106,7 @@
 
 #AnimatedHoverCardContainer {
     /* padding: 20px; */
-    height: 30vw;
+    /* height: 30vw; */
     overflow: hidden;
     display: flex;
     /* align-items: center; */
@@ -121,13 +121,23 @@
     margin-top: 4rem;
     margin-bottom: 4rem;
 }
-.NormalOverlay{
+
+.NormalOverlay {
     position: absolute;
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.204);
     top: 0px;
 }
+
+.ant-row .ant-col:nth-child(2) .AnimatedHoverCardContainer {
+    position: absolute !important;
+}
+
+.ant-row .ant-col:nth-child(5) {
+    visibility: hidden !important;
+}
+
 
 #AnimatedHoverCardContainer .HoverOverlay {
     height: 0px;
@@ -168,8 +178,9 @@
     /* align-items: center; */
     justify-content: center;
     position: relative;
-    margin: 20px;
+    margin: 10px;
     transition: .5s;
+    border-radius: 10px;
 }
 
 .CardContentContainer {
@@ -180,6 +191,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .CardContentContainer>div {
@@ -221,7 +233,7 @@
 }
 
 .CardContentContainer:hover .AnimatedCommonBtn:hover {
-   border: 1px solid #2e4139;
+    border: 1px solid #2e4139;
 }
 
 

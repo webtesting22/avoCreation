@@ -94,7 +94,7 @@ const ShowProductsHomepage = () => {
                     </div>
                 </div>
                 <div className="ProductsCardsContainer">
-                    <Row>
+                    {/* <Row>
                         {hampersProducts.map((item, index) => (
                             <Col lg={8} key={index}>
                                 <div
@@ -126,7 +126,55 @@ const ShowProductsHomepage = () => {
                                                     <h2>{item.name}</h2>
                                                 </div>
                                                 <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-                                                    {/* <h2>{item.stock}</h2> */}
+                                        
+                                                    <button
+                                                        className="AnimatedCommonBtn"
+                                                        onMouseMove={handleMouseMove}
+                                                        onMouseLeave={handleMouseLeave}
+                                                        style={{
+                                                            transform: `translate(${position.x * 0.1}px, ${position.y * 0.1}px)`,
+                                                        }}
+                                                    >
+                                                        View more
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </Col>
+                        ))}
+                    </Row> */}
+                    <Row>
+                        {hampersProducts.map((item, index) => (
+                            <Col lg={8} key={index}>
+                                <div className="CardWrapper"> {/* Wrapper div for nth-child targeting */}
+                                    <div
+                                        id="AnimatedHoverCardContainer"
+                                        className="AnimatedHoverCardContainer"
+                                        data-aos="fade-up"
+                                        data-aos-delay={index * 200}
+                                        data-aos-duration="1000"
+                                        onMouseEnter={() => setHoveredIndex(index)}
+                                        onMouseLeave={() => setHoveredIndex(null)}
+                                    >
+                                        <div className="Heloos">
+                                            <div>
+                                                <img
+                                                    className="primary-image"
+                                                    // src={hoveredIndex === index ? item.alterNameImage : item.imageUrl}
+                                                    src={item.imageUrl}
+                                                    alt=""
+                                                />
+                                            </div>
+                                            <div className="NormalOverlay"></div>
+                                            <div className="HoverOverlay"></div>
+                                            <div className="CardContentContainer">
+                                                <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+                                                    <h2>{item.category}</h2>
+                                                    <h2>{item.name}</h2>
+                                                </div>
+                                                <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
                                                     <button
                                                         className="AnimatedCommonBtn"
                                                         onMouseMove={handleMouseMove}
@@ -145,6 +193,7 @@ const ShowProductsHomepage = () => {
                             </Col>
                         ))}
                     </Row>
+
 
                 </div>
             </section>
