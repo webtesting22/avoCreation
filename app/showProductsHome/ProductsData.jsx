@@ -18,8 +18,8 @@ const hampersProducts = [
         price: 65.50,
         category: "Wellness",
         stock: 15,
-        imageUrl: "https://images.unsplash.com/photo-1491821893533-80f535044695?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        alterNameImage: "https://images.unsplash.com/photo-1481391319762-47dff72954d9?q=80&w=1799&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        imageUrl: "https://webtesting-upload.vercel.app/assets/GalleryImage2-YWTKa2zd.svg",
+        alterNameImage: "https://webtesting-upload.vercel.app/assets/GalleryImage2-YWTKa2zd.svg"
     },
     {
         id: 3,
@@ -62,8 +62,30 @@ const hampersProducts = [
         price: 89.99,
         category: "Festive",
         stock: 18,
-        imageUrl: "https://images.unsplash.com/photo-1607920592519-bab4d7db727d?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        alterNameImage: "https://images.unsplash.com/photo-1607920592519-bab4d7db727d?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        imageUrl: "https://webtesting-upload.vercel.app/assets/GalleryImage-BqLsq2JY.svg",
+        alterNameImage: "https://webtesting-upload.vercel.app/assets/GalleryImage-BqLsq2JY.svg"
+    },
+    {
+        id: 5,
+        name: "Baby Showers",
+        description: "A hamper with fun treats and games for the whole family to enjoy.",
+        itemsIncluded: ["Board Game", "Popcorn", "Assorted Snacks", "Chocolate Bars"],
+        price: 55.00,
+        category: "Family",
+        stock: 25,
+        imageUrl: "https://plus.unsplash.com/premium_photo-1726873405579-e5affcbd91a6?q=80&w=2953&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        alterNameImage: "https://webtesting-upload.vercel.app/assets/6-cBAnwhQA.jpeg"
+    },
+    {
+        id: 5,
+        name: "Baby Showers",
+        description: "A hamper with fun treats and games for the whole family to enjoy.",
+        itemsIncluded: ["Board Game", "Popcorn", "Assorted Snacks", "Chocolate Bars"],
+        price: 55.00,
+        category: "Family",
+        stock: 25,
+        imageUrl: "https://plus.unsplash.com/premium_photo-1726873405579-e5affcbd91a6?q=80&w=2953&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        alterNameImage: "https://webtesting-upload.vercel.app/assets/6-cBAnwhQA.jpeg"
     },
     // {
     //   id: 7,

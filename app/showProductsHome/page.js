@@ -162,9 +162,8 @@ const ShowProductsHomepage = () => {
                                             <div>
                                                 <img
                                                     className="primary-image"
-                                                    // src={hoveredIndex === index ? item.alterNameImage : item.imageUrl}
                                                     src={item.imageUrl}
-                                                    alt=""
+                                                    alt="avo curation image"
                                                 />
                                             </div>
                                             <div className="NormalOverlay"></div>
