@@ -12,10 +12,12 @@
 
 #NavigationContainer {
     /* height: 10vh; */
+    height: 59.6px;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 0rem 4rem;
+    margin: 0rem 4rem;
+    /* border-bottom: 1px solid #2e4139; */
 }
 
 #LogoContainer img {
@@ -33,7 +35,7 @@
 #FirstContainer {
     display: flex;
     width: 33.3%;
-    background-color: #273730;
+    background-color: transparent;
     /* padding: 10px; */
     align-items: center;
     position: sticky;
@@ -120,6 +122,9 @@
 }
 
 /* Styling for the menu and close icons */
+.MenuButton{
+    display: none !important;
+}
 .MenuButton svg {
     font-size: 40px;
     cursor: pointer;
@@ -132,6 +137,7 @@
     z-index: 1;
     display: flex;
     justify-content: center;
+    display: none;
 }
 
 #SecondContainer ul {

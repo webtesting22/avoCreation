@@ -91,7 +91,7 @@ const AvoNavigation = () => {
                     <div id="FirstContainer">
                         <div id="LogoContainer">
                             <Link href='/'>
-                                <img src="./images/AvoLogo-removebg-preview.png" alt="Avo Logo" />
+                                <img src="https://webtesting-upload.vercel.app/assets/Newlogo-DarJ6KI3.png" alt="Avo Logo" />
                             </Link>
                         </div>
                         <div onClick={toggleMenu} className="MenuButton">

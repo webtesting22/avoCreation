@@ -1,5 +1,5 @@
 #AboutUsSection {
-    background-image: url("../../public//images/AboutUsBackl.jpeg");
+    background-image: url("https://webtesting-upload.vercel.app/assets/AboutUsBanner-DLQ03VUR.jpeg");
     /* height: 100vh; */
     background-size: cover;
     background-position: center;
@@ -16,7 +16,7 @@
 .AdjustBothContainer {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: end;
     height: 100%;
     width: 100%;
     padding-top: 7rem;
@@ -101,8 +101,21 @@
     /* width: 100%; */
     overflow: hidden;
     background-color: #f3f6fc;
-    padding: 50px 0;
+    /* padding: 50px 0; */
     margin: 0rem 4rem;
+    display: flex;
+    position: relative;
+    align-items: end;
+    position: relative;
+    height: 100px;
+    padding: 20px 0px;
+}
+
+.marquee-tag-container img {
+    width: 70px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }
 
 .marquee-item {
@@ -123,11 +136,11 @@
     text-transform: uppercase;
 }
 
-  
-  .gift-point.odd {
+
+.gift-point.odd {
     font-weight: 600;
-  }
-  
+}
+
 
 .marquee-item:hover .gift-point {
     font-style: italic;

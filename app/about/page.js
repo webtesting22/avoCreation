@@ -64,7 +64,7 @@ export default function page() {
     {
       title: "Personalized Consultation",
       icon: <FaUserAlt />,
-      description: ": We start with a conversation to understand your unique needs, budget preferences, and the essence of the occasion."
+      description: "We start with a conversation to understand your unique needs, budget preferences, and the essence of the occasion."
     },
     {
       title: "Customization Expertise",
@@ -117,14 +117,15 @@ export default function page() {
 
           </div>
           <div className="AdjustBothContainer">
-            <div className="TopContainerAbout">
+            {/* <div className="TopContainerAbout">
               <p>About Avo Curation</p>
-            </div>
+            </div> */}
             <div className="BottomContainerAbout">
               <div>
                 <h1>Gift <br /> Excellence</h1>
                 <br /><br />
-                <p>Unwrap Joy, Share Love</p>
+                <p>About Avo Curation</p>
+                {/* <p>Unwrap Joy, Share Love</p> */}
               </div>
               <div>
                 <button
@@ -144,17 +145,19 @@ export default function page() {
         </div>
       </div>
       <div className="marquee-tag-container">
-  <Marquee gradient={false} speed={40}>
-    {giftPoints.map((point, index) => (
-      <div key={index} className="marquee-item">
-        <span className="green-dot"><RiGift2Fill /></span>
-        <span className={`gift-point ${index % 2 !== 0 ? 'odd' : ''}`}>
-          {point}
-        </span>
+        <img src="https://webtesting-upload.vercel.app/assets/Animated-OXhW_vJ0.gif" alt="" />
+        <Marquee gradient={false} speed={40}>
+          {giftPoints.map((point, index) => (
+            <div key={index} className="marquee-item">
+              <span className="green-dot"><RiGift2Fill /></span>
+              <span className={`gift-point ${index % 2 !== 0 ? 'odd' : ''}`}>
+                {point}
+              </span>
+            </div>
+          ))}
+        </Marquee>
+
       </div>
-    ))}
-  </Marquee>
-</div>
 
       <section ref={topContainerRef}>
         <div id="TopContainer" >
@@ -197,7 +200,7 @@ export default function page() {
                     <h1>{item.title}</h1>
                     <p>{item.description}</p>
                     <br /><br />
-                    <button
+                    {/* <button
                       className="AnimatedCommonBtn"
                       onMouseMove={handleMouseMove}
                       onMouseLeave={handleMouseLeave}
@@ -206,8 +209,8 @@ export default function page() {
                       }}
                     >
                       Schedule a call
-                    </button>
-                    <br /><br />
+                    </button> */}
+                    {/* <br /><br /> */}
                   </div>
                 </div>
               </Col>

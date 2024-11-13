@@ -1,11 +1,11 @@
 "use client"
-import React, { useState,useRef,useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./ProductHome.css"
 import hampersProducts from "./ProductsData";
 import { Row, Col } from "antd";
 const ShowProductsHomepage = () => {
     const [position, setPosition] = useState({ x: 0, y: 0 });
-
+    const [hoveredIndex, setHoveredIndex] = useState(null);
     const handleMouseMove = (e) => {
         // Calculate position relative to the button center
         const button = e.currentTarget;
@@ -22,53 +22,53 @@ const ShowProductsHomepage = () => {
 
     const containerRef = useRef(null);
     const imageRef = useRef(null);
-  
+
     // Parallax effect function
     const parallaxEffect = () => {
-      const rect = containerRef.current.getBoundingClientRect();
-      const offset = window.scrollY - rect.top;
-      const parallaxSpeed = 0.1; // Adjust for faster or slower effect
-  
-      imageRef.current.style.transform = `translate(0%, ${offset * parallaxSpeed}px)`;
+        const rect = containerRef.current.getBoundingClientRect();
+        const offset = window.scrollY - rect.top;
+        const parallaxSpeed = 0.1; // Adjust for faster or slower effect
+
+        imageRef.current.style.transform = `translate(0%, ${offset * parallaxSpeed}px)`;
     };
-  
+
     // Intersection Observer setup
     useEffect(() => {
-      const observer = new IntersectionObserver(
-        ([entry]) => {
-          if (entry.isIntersecting) {
-            window.addEventListener('scroll', parallaxEffect);
-          } else {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    window.addEventListener('scroll', parallaxEffect);
+                } else {
+                    window.removeEventListener('scroll', parallaxEffect);
+                }
+            },
+            { threshold: 0.1 } // Trigger when 10% of the container is visible
+        );
+
+        if (containerRef.current) {
+            observer.observe(containerRef.current);
+        }
+
+        return () => {
+            observer.disconnect();
             window.removeEventListener('scroll', parallaxEffect);
-          }
-        },
-        { threshold: 0.1 } // Trigger when 10% of the container is visible
-      );
-  
-      if (containerRef.current) {
-        observer.observe(containerRef.current);
-      }
-  
-      return () => {
-        observer.disconnect();
-        window.removeEventListener('scroll', parallaxEffect);
-      };
+        };
     }, []);
-  
+
     return (
 
         <>
             <section>
                 <div id="OverlayContainer">
-                <div className="parallax-container" ref={containerRef}>
-      <img
-        src="https://images.unsplash.com/photo-1510828325835-5940110b482a?q=80&w=2928&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90byw1db8fGVufDB8fHx8fA%3D%3D"
-        alt="Parallax"
-        className="parallax-image"
-        ref={imageRef}
-      />
-    </div>  
-       <div id="InsideOverlayContent">
+                    <div className="parallax-container" ref={containerRef}>
+                        <img
+                            src="https://images.unsplash.com/photo-1510828325835-5940110b482a?q=80&w=2928&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90byw1db8fGVufDB8fHx8fA%3D%3D"
+                            alt="Parallax"
+                            className="parallax-image"
+                            ref={imageRef}
+                        />
+                    </div>
+                    <div id="InsideOverlayContent">
                         <div className="AnimatedDot">
                             <div className="ProductInfo">
                                 <div className="CardContainer">
@@ -100,20 +100,24 @@ const ShowProductsHomepage = () => {
                                 <div
                                     id="AnimatedHoverCardContainer"
                                     style={{
-                                        marginTop: index % 2 === 0 ? '60px' : '0',  // Apply marginTop to every even item (0, 2, 4, etc.)
-                                        marginBottom: index % 2 === 0 ? '80px' : '0'  // Apply marginBottom to every even item
+                                        marginTop: index % 2 === 0 ? '0px' : '0',  // Apply marginTop to every even item (0, 2, 4, etc.)
+                                        marginBottom: index % 2 === 0 ? '0px' : '0'  // Apply marginBottom to every even item
                                     }}
                                     data-aos="fade-up"
                                     data-aos-delay={index * 200}  // Delay increases by 200ms for each item
                                     data-aos-duration="1000"
+                                    onMouseEnter={() => setHoveredIndex(index)}  // Set hoveredIndex on mouse enter
+                                    onMouseLeave={() => setHoveredIndex(null)}
                                 >
                                     <div className="Heloos">
                                         <div>
                                             <img
-                                                src="https://images.unsplash.com/photo-1603561128963-5f4d971c4959?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                                className="primary-image"
+                                                src={hoveredIndex === index ? item.alterNameImage : item.imageUrl} // Conditionally render based on hover
                                                 alt="Product Image"
                                             />
                                         </div>
+                                        <div className="NormalOverlay"></div>
                                         <div className="HoverOverlay"></div>
                                         <div className="CardContentContainer">
                                             <div>
@@ -122,7 +126,7 @@ const ShowProductsHomepage = () => {
                                                     <h2>{item.name}</h2>
                                                 </div>
                                                 <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-                                                    <h2>{item.stock}</h2>
+                                                    {/* <h2>{item.stock}</h2> */}
                                                     <button
                                                         className="AnimatedCommonBtn"
                                                         onMouseMove={handleMouseMove}

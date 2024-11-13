@@ -25,7 +25,7 @@ body {
 
 
 section {
-  padding: 6rem 4rem;
+  padding: 4rem 4rem;
   padding-bottom: 0px !important;
 }
 
@@ -72,18 +72,19 @@ section {
 }
 
 @media (max-width: 798px) {
-   section{
+  section {
     padding: 5px;
     /* overflow: hidden;  */
-   }
+  }
 }
 
 #TopNavContainerSet {
   position: fixed;
   top: 0px;
   right: 64px;
-  width: 70%;
+  /* width: 70%; */
   height: 0;
+  left: 64px;
   background-color: #273730;
   overflow: hidden;
   transition: height 0.3s ease;
@@ -103,8 +104,9 @@ section {
 #BestCategoriesCard {
   background-color: white;
   border: 1px solid rgb(239, 239, 239);
-  border-right: 0px !important;
-  /* min-height: 50vh; */
+  /* border-right: 0px !important; */
+  /* margin: 10px; */
+  min-height: 320px;
   width: 100%;
   position: relative;
   transition: 1s;
@@ -159,14 +161,14 @@ section {
 
 #BestCategoriesCard h1,
 #BestCategoriesCard p {
-  transform: translatey(40px) !important;
+  transform: translatey(60px) !important;
   transition: 1s;
 
 }
 
 #BestCategoriesCard:hover h1,
 #BestCategoriesCard:hover p {
-  transform: translatey(0px) !important;
+  transform: translatey(40px) !important;
   transition: 1s;
 }
 
@@ -188,4 +190,70 @@ section {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+}
+
+
+@media (max-width:950px) {
+  #BestCategoriesCard {
+    background-color: white;
+    border: 1px solid rgb(239, 239, 239);
+    border-right: 0px !important;
+    min-height: 100%;
+    width: 100%;
+    position: relative;
+    transition: 1s;
+    padding: 30px;
+
+  }
+}
+
+.star-cursor-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 9999;
+}
+
+.star {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: opacity 1s, transform 0.5s;
+  background-image: url("../public/ClipPathIcon.svg");
+  /* Use clip-path with a polygon or path that works */
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.star.moving {
+  opacity: 1;
+  animation: starBlink 2s ease-in-out infinite, starMove 0.5s ease;
+}
+
+@keyframes starBlink {
+
+  0%,
+  100% {
+    opacity: 0.8;
+  }
+
+  50% {
+    opacity: 0.2;
+  }
+}
+
+@keyframes starMove {
+  from {
+    transform: scale(0.5);
+  }
+
+  to {
+    transform: scale(1);
+  }
 }

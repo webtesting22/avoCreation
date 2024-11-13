@@ -113,11 +113,20 @@
     justify-content: center;
     position: relative;
     transition: .5s;
+    /* margin: 5px; */
 
 }
 
 .ProductsCardsContainer {
-    margin-top: 6rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+.NormalOverlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.204);
+    top: 0px;
 }
 
 #AnimatedHoverCardContainer .HoverOverlay {
@@ -178,8 +187,9 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    position: sticky;
     padding: 2rem 0rem;
 }
 
@@ -210,14 +220,19 @@
     transition: 1s;
 }
 
+.CardContentContainer:hover .AnimatedCommonBtn:hover {
+   border: 1px solid #2e4139;
+}
+
+
 /* Parallax.css */
 .parallax-container {
     position: relative;
     overflow: hidden;
     height: 100vh;
-  }
-  
-  .parallax-image {
+}
+
+.parallax-image {
     position: absolute;
     top: -20%;
     /* left: 10%; */
@@ -225,20 +240,20 @@
     height: 100%;
     width: 100%;
     transition: transform 0.1s ease-out;
-  }
+}
 
-  @media (max-width: 798px) {
+@media (max-width: 798px) {
     #InsideOverlayContent {
         position: absolute;
         height: 100%;
         width: 100%;
         top: 0px;
-        
+
     }
+
     .parallax-container {
         position: relative;
         overflow: hidden;
         height: 60vh;
-      }
-  }
-  
+    }
+}

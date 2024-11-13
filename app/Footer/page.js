@@ -5,6 +5,7 @@ import { FaFacebook } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import Link from 'next/link';
 const Footer = () => {
 
     const SocialIconsdata = [
@@ -32,23 +33,26 @@ const Footer = () => {
     ]
     const NavigationsLinks = [
         {
+            path: "/about",
             Links: "About"
         },
         {
+            path: "/",  // Fallback for missing path
             Links: "Projects"
         },
         {
+            path: "/",  // Fallback for missing path
             Links: "Contact"
-        },
-    ]
+        }
+    ];
     return (
         <>
             <section id="FooterContainer">
                 <Row>
                     <Col lg={8}>
-                    <div className="LogoAndBioContainer">
+                        <div className="LogoAndBioContainer">
 
-                    </div>
+                        </div>
                     </Col>
                     <Col lg={8}>
                         <div className="ShortNavigationLinksContainer">
@@ -57,9 +61,11 @@ const Footer = () => {
                             </div>
 
                             {NavigationsLinks.map((item, index) => (
-                                <div key={index} className="SocialContainer">
-                                    <p>{item.Links}</p>
-                                </div>
+                                <Link key={index} href={item.path}>
+                                    <div key={index} className="SocialContainer">
+                                        <p>{item.Links}</p>
+                                    </div>
+                                </Link>
                             ))}
                         </div>
                     </Col>
