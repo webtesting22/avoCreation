@@ -1,6 +1,7 @@
 "use client"
 import React from "react";
 import { useState, useRef, useEffect } from "react";
+import "./Cursor.css"
 const CursorAnimated = () => {
     const [stars, setStars] = useState([]);
     const [isMoving, setIsMoving] = useState(false);
@@ -39,6 +40,7 @@ const CursorAnimated = () => {
                             left: star.x,
                             top: star.y,
                             backgroundColor: star.color, // Set the background color dynamically
+                            opacity: isMoving ? 1 : 0,
                         }}
                     ></div>
                 ))}

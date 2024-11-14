@@ -51,7 +51,7 @@ const Footer = () => {
                 <Row>
                     <Col lg={8}>
                         <div className="LogoAndBioContainer">
-
+                           <img src="https://webtesting-upload.vercel.app/assets/hindilogo-DyEuu-Wo.jpg" className="Footer-Logo"></img>
                         </div>
                     </Col>
                     <Col lg={8}>
