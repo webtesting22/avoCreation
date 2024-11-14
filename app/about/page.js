@@ -161,6 +161,7 @@ export default function page() {
 
       <section ref={topContainerRef}>
         <div id="TopContainer" >
+          <img src="https://webtesting-upload.vercel.app/assets/giftIcons-B0MnY66R.png" alt="" className="Icon" />
           <div>
             <h1 className="CommonTagline">Show Family</h1>
             <h2 className="CommonHeading">AVO Experience</h2>
@@ -180,42 +181,7 @@ export default function page() {
         </div>
 
         <div className="BestCategoriesShowContainer">
-          <Row>
-            {CardContentData.map((item, index) => (
-              <Col
-                lg={8}
-                md={12}
-                key={index}
-                data-aos="fade-up"
-                data-aos-delay={index * 200} // Delay increases by 1 second for each item
-                data-aos-duration="1000" // Animation duration (optional)
-              >
-                <div id="BestCategoriesCard">
-                  <div id="FillColorAnimation">
-                  </div>
-                  <div style={{ position: "sticky" }}>
-                    <div id="IconContainer">
-                      {item.icon}
-                    </div>
-                    <h1>{item.title}</h1>
-                    <p>{item.description}</p>
-                    <br /><br />
-                    {/* <button
-                      className="AnimatedCommonBtn"
-                      onMouseMove={handleMouseMove}
-                      onMouseLeave={handleMouseLeave}
-                      style={{
-                        transform: `translate(${position.x * 0.1}px, ${position.y * 0.1}px)`,
-                      }}
-                    >
-                      Schedule a call
-                    </button> */}
-                    {/* <br /><br /> */}
-                  </div>
-                </div>
-              </Col>
-            ))}
-          </Row>
+
 
         </div>
         <br /><br /><br />

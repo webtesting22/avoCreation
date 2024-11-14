@@ -5,6 +5,8 @@ import About from "./about/page"
 import AvoHome from "./avoHome/page";
 import BestProduct from "./BestProducts/page";
 import ShowProductsHomepage from "./showProductsHome/page";
+import AboutContent from "./AboutContent/page";
+
 
 export default function Home() {
   
@@ -12,7 +14,8 @@ export default function Home() {
     <div>
       
       <AvoHome />
-      <BestProduct />
+      <AboutContent/>
+      {/* <BestProduct /> */}
       <ShowProductsHomepage />
     </div>
   );

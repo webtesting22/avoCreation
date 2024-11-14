@@ -3,6 +3,7 @@ import React, { useState, useRef, useEffect } from "react";
 import "./ProductHome.css"
 import hampersProducts from "./ProductsData";
 import { Row, Col } from "antd";
+import Masonry from "react-masonry-css";
 const ShowProductsHomepage = () => {
     const [position, setPosition] = useState({ x: 0, y: 0 });
     const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -55,6 +56,11 @@ const ShowProductsHomepage = () => {
         };
     }, []);
 
+    const breakpointColumnsObj = {
+        default: 3, // Three columns by default
+        1100: 2,    // Two columns for medium screens
+        700: 1      // One column for small screens
+    };
     return (
 
         <>
@@ -145,10 +151,10 @@ const ShowProductsHomepage = () => {
                             </Col>
                         ))}
                     </Row> */}
-                    <Row>
+                    {/* <Row>
                         {hampersProducts.map((item, index) => (
                             <Col lg={8} key={index}>
-                                <div className="CardWrapper"> {/* Wrapper div for nth-child targeting */}
+                                <div className="CardWrapper"> 
                                     <div
                                         id="AnimatedHoverCardContainer"
                                         className="AnimatedHoverCardContainer"
@@ -191,7 +197,61 @@ const ShowProductsHomepage = () => {
                                 </div>
                             </Col>
                         ))}
-                    </Row>
+                    </Row> */}
+                    <Masonry
+                        breakpointCols={breakpointColumnsObj}
+                        className="my-masonry-grid"
+                        columnClassName="my-masonry-grid_column"
+                    >
+                        {hampersProducts.map((item, index) => (
+                            // <div className="gallery-item" key={index}>
+                            //     <img src={item.imageUrl} alt="" />
+                            // </div>
+                            <div className="gallery-item" key={index}>
+                                <div className="CardWrapper">
+                                    <div
+                                        id="AnimatedHoverCardContainer"
+                                        className="AnimatedHoverCardContainer"
+                                        data-aos="fade-up"
+                                        data-aos-delay={index * 200}
+                                        data-aos-duration="1000"
+                                        onMouseEnter={() => setHoveredIndex(index)}
+                                        onMouseLeave={() => setHoveredIndex(null)}
+                                    >
+                                        <div className="Heloos">
+                                            <div>
+                                                <img
+                                                    className="primary-image"
+                                                    src={item.imageUrl}
+                                                    alt="avo curation image"
+                                                />
+                                            </div>
+                                            <div className="NormalOverlay"></div>
+                                            <div className="HoverOverlay"></div>
+                                            <div className="CardContentContainer">
+                                                <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+                                                    <h2>{item.category}</h2>
+                                                    <h2>{item.name}</h2>
+                                                </div>
+                                                <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+                                                    <button
+                                                        className="AnimatedCommonBtn"
+                                                        onMouseMove={handleMouseMove}
+                                                        onMouseLeave={handleMouseLeave}
+                                                        style={{
+                                                            transform: `translate(${position.x * 0.1}px, ${position.y * 0.1}px)`,
+                                                        }}
+                                                    >
+                                                        View more
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </Masonry>
 
 
                 </div>

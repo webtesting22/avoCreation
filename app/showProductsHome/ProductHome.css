@@ -121,6 +121,8 @@
 .ProductsCardsContainer {
     margin-top: 4rem;
     margin-bottom: 4rem;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .NormalOverlay {
@@ -131,6 +133,8 @@
     top: 0px;
 }
 
+
+
 .ant-row .ant-col:nth-child(2) .AnimatedHoverCardContainer {
     position: absolute !important;
 }
@@ -138,11 +142,13 @@
 .ant-row .ant-col:nth-child(5) {
     visibility: hidden !important;
 }
+
 .ant-row .ant-col:nth-child(7) {
     visibility: hidden !important;
     height: 0px !important;
 }
-.ant-row .ant-col:nth-child(8) .CardWrapper{
+
+.ant-row .ant-col:nth-child(8) .CardWrapper {
     position: absolute;
     margin-top: -68%;
 }
@@ -278,3 +284,30 @@
         height: 60vh;
     }
 }
+
+/* Gallery.css */
+
+/* Basic masonry grid styles */
+.my-masonry-grid {
+    display: flex;
+    margin-left: -16px; /* Compensates for column gap */
+    width: auto;
+  }
+  .my-masonry-grid_column {
+    padding-left: 16px; /* Space between columns */
+    background-clip: padding-box;
+  }
+  
+  /* Style for each gallery item */
+  .gallery-item {
+    margin-bottom: 16px; /* Space between items */
+    overflow: hidden;
+    border-radius: 8px; /* Optional: Rounded corners */
+  }
+  .gallery-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Match corner radius */
+  }
+  
