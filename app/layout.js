@@ -3,7 +3,7 @@ import "./globals.css";
 import AvoNavigation from "./avoNavigation/page";
 import Script from "next/script";
 import Footer from "./Footer/page";
-
+import CursorAnimated from "./CursorAnimated/page";
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -34,8 +34,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        
+       
         <AvoNavigation />
+        <CursorAnimated/>
         {children}
         <Footer/>
         <Script src="https://unpkg.com/aos@next/dist/aos.js" strategy="beforeInteractive" />

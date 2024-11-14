@@ -48,7 +48,7 @@ const BestProduct = () => {
                         <h1 className="CommonTagline">Show popular</h1>
                         <h2 className="CommonHeading">We do it best.</h2>
                     </div>
-                    <img src="https://webtesting-upload.vercel.app/assets/AvoAccessoriesOverlay-CBCd2_8N.png" alt="" className="OverlayLeafImage"/>
+                    <img src="https://webtesting-upload.vercel.app/assets/AvoAccessoriesOverlay-CBCd2_8N.png" alt="" className="OverlayLeafImage" />
                     <div>
                         <button
                             className="AnimatedCommonBtn"
@@ -62,7 +62,22 @@ const BestProduct = () => {
                         </button>
                     </div>
                 </div>
-                {/* <div className="BestCategoriesShowContainer">
+                <div className="BestCategoriesShowContainer">
+                    <div className="AdjustImages">
+                    <Row>
+                        <Col lg={12} md={24}>
+                            <div className="BannerContainer">
+                                <img src="https://images.unsplash.com/photo-1513726214296-1f2e95e452d8?q=80&w=2936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                            </div>
+                        </Col>
+                        <Col lg={12} md={24}>
+                            <div className="BannerContainer">
+                                <img src="https://images.unsplash.com/photo-1513726214296-1f2e95e452d8?q=80&w=2936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                            </div>
+                        </Col>
+                    </Row>
+                    </div>
+                    {/* 
                     <Row>
                         {CardContentData.map((item, index) => (
                             <Col
@@ -99,8 +114,8 @@ const BestProduct = () => {
                             </Col>
                         ))}
                     </Row>
-
-                </div> */}
+ */}
+                </div>
             </section>
         </>
     )
