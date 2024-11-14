@@ -36,10 +36,7 @@ const Footer = () => {
             path: "/about",
             Links: "About"
         },
-        {
-            path: "/",  // Fallback for missing path
-            Links: "Projects"
-        },
+       
         {
             path: "/",  // Fallback for missing path
             Links: "Contact"
@@ -48,6 +45,7 @@ const Footer = () => {
     return (
         <>
             <section id="FooterContainer">
+            
                 <Row>
                     <Col lg={8}>
                         <div className="LogoAndBioContainer">

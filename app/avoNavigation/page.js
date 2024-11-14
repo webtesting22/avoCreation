@@ -51,10 +51,7 @@ const AvoNavigation = () => {
             path: "/about",
             Links: "About"
         },
-        {
-            path: "/",  // Fallback for missing path
-            Links: "Projects"
-        },
+       
         {
             path: "/",  // Fallback for missing path
             Links: "Contact"

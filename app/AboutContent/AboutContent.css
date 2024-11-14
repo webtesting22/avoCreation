@@ -1,0 +1,10 @@
+#AboutContent{
+    position: relative;
+}
+#AboutContent .overlayImage{
+    position: absolute;
+    top: 10%;
+    width: 200px;
+    right: 0px;
+    opacity: 0.2;
+}

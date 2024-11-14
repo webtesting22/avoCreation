@@ -166,7 +166,7 @@ export default function page() {
             <h1 className="CommonTagline">Show Family</h1>
             <h2 className="CommonHeading">AVO Experience</h2>
           </div>
-          <div>
+          {/* <div>
             <button
               className="AnimatedCommonBtn"
               onMouseMove={handleMouseMove}
@@ -177,7 +177,7 @@ export default function page() {
             >
               view All
             </button>
-          </div>
+          </div> */}
         </div>
 
         <div className="BestCategoriesShowContainer">
