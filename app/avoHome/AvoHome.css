@@ -12,62 +12,65 @@
     height: 100vh !important;
 }
 
+#AvoHomeHeroMainContainer .swiper-pagination {
+    position: absolute !important;
+    right: 20px !important;
+    /* width: 200px; */
+    /* display: flex; */
+    flex-direction: column !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: end !important;
+    height: 100% !important;
+}
 
-/* Define the border filling animation */
-
-
-/* Pagination bullet button */
-.swiper-pagination-bullet {
+#AvoHomeHeroMainContainer .swiper-pagination-bullet {
+    padding: 6px;
+    border: 1px solid white;
+    border-radius: 50%;
+    transition: 0.3s;
+    background-color: white;
+    margin-right: 30px;
+    margin-bottom: 20px;
     position: relative;
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: auto;
-    height: auto;
-    margin: 0 10px;
-    background-color: transparent;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  /* Inner text span */
-  .swiper-pagination-bullet {
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  /* SVG progress circle */
-  .progress {
-    transform: rotate(-90deg);
-  }
-  
-  .circle-origin {
-    fill: transparent;
-    stroke: #fff;
-    stroke-width: 1;
-    stroke-linecap: round;
-    stroke-dasharray: 125.664px; /* Circumference for a radius of 20 */
-    stroke-dashoffset: 125.664px;
-  }
-  
-  /* Active pagination animation */
-  .swiper-pagination-bullet-active  {
-    animation: progress 2s linear forwards;
-  }
-  
-  /* Border fill animation */
-  @keyframes progress {
+    justify-content: center;
+}
+#AvoHomeHeroMainContainer .swiper-pagination-bullet::after{
+content: "";
+display: inline-block;
+height: 12px ;
+width: 12px;
+background-color: #273730;
+border-radius: 50%;
+position: absolute;
+
+}
+
+/* Pulse effect for active pagination bullet */
+#AvoHomeHeroMainContainer .swiper-pagination-bullet-active {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
     0% {
-      stroke-dashoffset: 125.664px;
+        transform: scale(1);
+        box-shadow: 0 0 0 0 #273730;
     }
+
+    50% {
+        transform: scale(1.2);
+        box-shadow: 0 0 0 10px rgba(255, 0, 0, 0);
+    }
+
     100% {
-      stroke-dashoffset: 0;
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
     }
-  }
+}
+
 /* @keyframes backgroundSlideshow {
     0% {
         background-image: url("https://images.unsplash.com/photo-1608755727748-dfa2e44f255b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");

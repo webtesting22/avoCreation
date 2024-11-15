@@ -8,7 +8,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import 'swiper/css/effect-fade';
 // Import required Swiper modules
-import { Autoplay, Pagination, Navigation,EffectFade } from "swiper/modules";
+import { Autoplay, Pagination, Navigation, EffectFade } from "swiper/modules";
 
 const mediaItems = [
     {
@@ -41,7 +41,7 @@ export default function AvoHome() {
                 effect={'fade'}
                 pagination={{ clickable: true }}
                 navigation={true}
-                modules={[Autoplay, Pagination, Navigation,EffectFade]}
+                modules={[Autoplay, Pagination, Navigation, EffectFade]}
                 className="mySwiper"
             >
                 {mediaItems.map((item, index) => (
