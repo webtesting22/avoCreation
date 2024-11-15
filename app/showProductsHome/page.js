@@ -220,17 +220,17 @@ const ShowProductsHomepage = () => {
                                     >
                                         <div className="Heloos">
                                             <div>
-                                                <img
-                                                    className="primary-image"
-                                                    src={item.imageUrl}
-                                                    alt="avo curation image"
-                                                />
+                                            <img
+                                        className="primary-image"
+                                        src={hoveredIndex === index ? item.alterNameImage : item.imageUrl}
+                                        alt="avo curation image"
+                                    />
                                             </div>
                                             <div className="NormalOverlay"></div>
                                             <div className="HoverOverlay"></div>
                                             <div className="CardContentContainer">
                                                 <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-                                                    <h2>{item.category}</h2>
+                                                    {/* <h2>{item.category}</h2> */}
                                                     <h2>{item.name}</h2>
                                                 </div>
                                                 <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>

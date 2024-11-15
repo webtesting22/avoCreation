@@ -7,8 +7,8 @@ const hampersProducts = [
         price: 79.99,
         category: "Gourmet",
         stock: 20,
-        imageUrl: "https://images.unsplash.com/photo-1521478706270-f2e33c203d95?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        alterNameImage: "https://images.unsplash.com/photo-1513885045260-6b3086b24c17?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        imageUrl: "https://webtesting-upload.vercel.app/assets/Photo%20By%20Ozel%20Bir%20Sey%20-%20Favors-BnW82d09.jpeg",
+        alterNameImage: "https://webtesting-upload.vercel.app/assets/Christmas%20gift%20box-CKUBDolb.jpeg"
     },
     {
         id: 4,
@@ -18,7 +18,7 @@ const hampersProducts = [
         price: 120.00,
         category: "Celebration",
         stock: 8,
-        imageUrl: "https://images.unsplash.com/photo-1481391319762-47dff72954d9?q=80&w=1799&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        imageUrl: "https://webtesting-upload.vercel.app/assets/591fb91f-01e1-49f1-bda0-e1242b721665-DHvvSQ1P.jpeg",
         alterNameImage: "https://images.unsplash.com/photo-1592903297149-37fb25202dfa?q=80&w=2785&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
@@ -54,7 +54,7 @@ const hampersProducts = [
         category: "Family",
         stock: 25,
         imageUrl: "https://plus.unsplash.com/premium_photo-1726873405579-e5affcbd91a6?q=80&w=2953&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        alterNameImage: "https://webtesting-upload.vercel.app/assets/6-cBAnwhQA.jpeg"
+        alterNameImage: "https://plus.unsplash.com/premium_photo-1726873405579-e5affcbd91a6?q=80&w=2953&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
         id: 6,
