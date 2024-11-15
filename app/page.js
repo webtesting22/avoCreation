@@ -11,12 +11,13 @@ import AboutContent from "./AboutContent/page";
 export default function Home() {
   
   return (
-    <div>
-      
+    // <div>
+      <>
       <AvoHome />
       <AboutContent/>
       {/* <BestProduct /> */}
       <ShowProductsHomepage />
-    </div>
+      </>
+    // </div>
   );
 }

@@ -4,11 +4,71 @@
     position: relative;
     background-size: cover;
     background-position: center;
-    animation: backgroundSlideshow 15s infinite; 
-    z-index: -1;
+    /* animation: backgroundSlideshow 15s infinite;  */
+    /* z-index: -1; */
 }
 
-@keyframes backgroundSlideshow {
+#AvoHomeHeroMainContainer .swiper-slide {
+    height: 100vh !important;
+}
+
+
+/* Define the border filling animation */
+
+
+/* Pagination bullet button */
+.swiper-pagination-bullet {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    margin: 0 10px;
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* Inner text span */
+  .swiper-pagination-bullet {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* SVG progress circle */
+  .progress {
+    transform: rotate(-90deg);
+  }
+  
+  .circle-origin {
+    fill: transparent;
+    stroke: #fff;
+    stroke-width: 1;
+    stroke-linecap: round;
+    stroke-dasharray: 125.664px; /* Circumference for a radius of 20 */
+    stroke-dashoffset: 125.664px;
+  }
+  
+  /* Active pagination animation */
+  .swiper-pagination-bullet-active  {
+    animation: progress 2s linear forwards;
+  }
+  
+  /* Border fill animation */
+  @keyframes progress {
+    0% {
+      stroke-dashoffset: 125.664px;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+/* @keyframes backgroundSlideshow {
     0% {
         background-image: url("https://images.unsplash.com/photo-1608755727748-dfa2e44f255b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     }
@@ -22,9 +82,9 @@
         background-image: url("https://images.unsplash.com/photo-1464895216333-d859b45bf394?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     }
     100% {
-        background-image: url("https://images.unsplash.com/photo-1542125363-a877c094f8dc?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); /* Loop back to first image */
+        background-image: url("https://images.unsplash.com/photo-1542125363-a877c094f8dc?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); 
     }
-}
+} */
 
 #LeftSideBottomContainer {
     background-color: white;
@@ -50,5 +110,3 @@
     display: flex;
     justify-content: start;
 }
-
-
