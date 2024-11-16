@@ -1,3 +1,4 @@
+"use client"
 import React, { useEffect, useRef } from "react";
 import { Row, Col } from "antd";
 import "./Crafting.css";
