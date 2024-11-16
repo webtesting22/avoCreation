@@ -159,8 +159,10 @@ export default function page() {
         </Marquee>
 
       </div>
+      <div ref={topContainerRef}>
+        <CraftingProcess />
+      </div>
 
-      <CraftingProcess />
     </>
   );
 }

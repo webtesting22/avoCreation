@@ -1,4 +1,3 @@
-"use client"
 import React, { useEffect, useRef } from "react";
 import { Row, Col } from "antd";
 import "./Crafting.css";
@@ -7,25 +6,40 @@ const CraftingProcess = () => {
     const containerRefs = useRef([]); // Array of container refs
     const imageRefs = useRef([]); // Array of image refs
 
-    // Parallax effect function using requestAnimationFrame
+    // Parallax effect function
     const parallaxEffect = () => {
-        window.requestAnimationFrame(() => {
-            containerRefs.current.forEach((container, index) => {
-                if (container && index % 2 !== 0) { // Only apply to odd indices
-                    const rect = container.getBoundingClientRect();
-                    const offset = window.scrollY - rect.top;
-                    const parallaxSpeed = 0.05; // Adjust speed
-                    if (imageRefs.current[index]) {
-                        const directionMultiplier = 1; // You can adjust direction if needed
-                        imageRefs.current[index].style.transform = `translate(0%, ${offset * parallaxSpeed * directionMultiplier
-                            }px)`;
-                    }
+        containerRefs.current.forEach((container, index) => {
+            if (container && (index === 1 || index === 4)) { // Apply parallax only to container 2 (index 1) and container 5 (index 4)
+                const rect = container.getBoundingClientRect();
+                const offset = window.scrollY - rect.top;
+                const parallaxSpeed = 0.1; // Adjust for faster or slower effect
+
+                if (imageRefs.current[index]) {
+                    const directionMultiplier = index % 2 === 0 ? 1 : -1; // Alternate direction
+                    imageRefs.current[index].style.transform = `translate(0%, ${offset * parallaxSpeed * directionMultiplier}px)`;
                 }
-            });
+            }
         });
     };
-    // Intersection Observer setup
+
+    // Ensure parallax is calculated after images are loaded and DOM is ready
     useEffect(() => {
+        const handleLoad = () => {
+            setTimeout(() => {
+                parallaxEffect(); // Trigger after slight delay to ensure page load
+            }, 100);
+        };
+
+        // Add event listeners for image load
+        imageRefs.current.forEach((img) => {
+            if (img) {
+                img.addEventListener("load", handleLoad);
+            }
+        });
+
+        // Trigger parallax effect once after mount to ensure initial position is correct
+        parallaxEffect();
+
         const observers = containerRefs.current.map((container) => {
             const observer = new IntersectionObserver(
                 ([entry]) => {
@@ -53,18 +67,22 @@ const CraftingProcess = () => {
 
     const images = [
         "https://images.unsplash.com/photo-1510828325835-5940110b482a?q=80&w=2928&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90byw1db8fGVufDB8fHx8fA%3D%3D",
-        "https://webtesting-upload.vercel.app/assets/Gift%20Hamper-B_1RnRnv.jpeg",
-        "https://webtesting-upload.vercel.app/assets/8-d_fwD7Dg.jpeg",
-        "https://webtesting-upload.vercel.app/assets/Creative%20Bridemaid%20Proposal%20Gifts-FMyqmDZl.jpeg",
-        "https://webtesting-upload.vercel.app/assets/591fb91f-01e1-49f1-bda0-e1242b721665-DHvvSQ1P.jpeg",
-        "https://webtesting-upload.vercel.app/assets/138bff0d-6cf7-4472-a455-52af6d2d78cd-Cxp7KYtw.jpeg"
+        "https://webtesting-upload.vercel.app/assets/%E2%94%98%C3%A7%E2%95%AA%C2%BB%E2%95%AA%C2%BA%E2%94%98%C3%A8%E2%95%AA%C2%BA%20%E2%94%98%C3%A5%E2%95%AA%E2%94%82%E2%95%AA%C2%BA%E2%94%98%C3%A8%E2%94%98%C3%B6%E2%94%98%C3%A8%E2%95%AA%E2%8C%90%20_%20gift%20boxes-BhRS_buy.jpeg",
+        "https://webtesting-upload.vercel.app/assets/6-cBAnwhQA.jpeg",
+        "https://webtesting-upload.vercel.app/assets/LEBARAN%20GIFT%20GUIDE_%202019%20-%20LIVING%20LOVING%202-ClhDlkyz.jpeg",
+        "https://webtesting-upload.vercel.app/assets/LEBARAN%20GIFT%20GUIDE_%202019%20-%20LIVING%20LOVING%202-ClhDlkyz.jpeg",
+        "https://webtesting-upload.vercel.app/assets/f2060d25-1655-406c-9773-4a9577e33a45-3WKaObN8.jpeg"
     ];
 
     return (
         <>
-            <section>
+            <section style={{position:"relative"}}>
+                <div className="imageContainer">
+                    <img src="https://webtesting-upload.vercel.app/assets/hindilogo-DyEuu-Wo.jpg" alt="" id="logo-image" />
+                    {/* <img src="https://webtesting-upload.vercel.app/assets/leaficon1-CuZO3KGV.png" alt="" /> */}
+                </div>
                 <div className="CraftingProcessImages">
-                    <Row gutter={[16, 16]}>
+                    <Row gutter={16}>
                         {images.map((image, index) => (
                             <Col lg={8} key={index}>
                                 <div id="OverlayContainer">
@@ -86,19 +104,7 @@ const CraftingProcess = () => {
                 </div>
             </section>
 
-            <section style={{paddingTop:"10rem"}}>
-                <div id="TopContainer">
-                    <img
-                        src="https://webtesting-upload.vercel.app/assets/giftIcons-B0MnY66R.png"
-                        alt=""
-                        className="Icon"
-                    />
-                    <div>
-                        <h1 className="CommonTagline">Show Family</h1>
-                        <h2 className="CommonHeading">AVO Experience</h2>
-                    </div>
-                </div>
-            </section>
+
         </>
     );
 };
