@@ -198,6 +198,15 @@ const ShowProductsHomepage = () => {
                             </Col>
                         ))}
                     </Row> */}
+                     <div id="TopContainer">
+                    <img src="https://webtesting-upload.vercel.app/assets/giftIcons-B0MnY66R.png" alt="" className="Icon" />
+                    <div>
+                        <h1 className="CommonTagline">AVO Best</h1>
+                        <h2 className="CommonHeading">Occasion Based Hampers</h2>
+                    </div>
+
+                </div>
+
                     <Masonry
                         breakpointCols={breakpointColumnsObj}
                         className="my-masonry-grid"

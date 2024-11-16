@@ -64,18 +64,18 @@ const BestProduct = () => {
                 </div>
                 <div className="BestCategoriesShowContainer">
                     <div className="AdjustImages">
-                    <Row>
-                        <Col lg={12} md={24}>
-                            <div className="BannerContainer">
-                                <img src="https://images.unsplash.com/photo-1513726214296-1f2e95e452d8?q=80&w=2936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
-                            </div>
-                        </Col>
-                        <Col lg={12} md={24}>
-                            <div className="BannerContainer">
-                                <img src="https://images.unsplash.com/photo-1513726214296-1f2e95e452d8?q=80&w=2936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
-                            </div>
-                        </Col>
-                    </Row>
+                        <Row>
+                            <Col lg={12} md={24}>
+                                <div className="BannerContainer">
+                                    <img src="https://images.unsplash.com/photo-1513726214296-1f2e95e452d8?q=80&w=2936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                                </div>
+                            </Col>
+                            <Col lg={12} md={24}>
+                                <div className="BannerContainer">
+                                    <img src="https://images.unsplash.com/photo-1513726214296-1f2e95e452d8?q=80&w=2936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                                </div>
+                            </Col>
+                        </Row>
                     </div>
                     {/* 
                     <Row>

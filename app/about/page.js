@@ -9,6 +9,7 @@ import { VscSettings } from "react-icons/vsc";
 import { FaGift } from "react-icons/fa";
 import { RiGift2Fill } from "react-icons/ri";
 import Marquee from 'react-fast-marquee';
+import CraftingProcess from "../CraftingProcess/page";
 const giftPoints = [
   "Elegant Packaging",
   "Premium Quality",
@@ -159,33 +160,7 @@ export default function page() {
 
       </div>
 
-      <section ref={topContainerRef}>
-        <div id="TopContainer" >
-          <img src="https://webtesting-upload.vercel.app/assets/giftIcons-B0MnY66R.png" alt="" className="Icon" />
-          <div>
-            <h1 className="CommonTagline">Show Family</h1>
-            <h2 className="CommonHeading">AVO Experience</h2>
-          </div>
-          {/* <div>
-            <button
-              className="AnimatedCommonBtn"
-              onMouseMove={handleMouseMove}
-              onMouseLeave={handleMouseLeave}
-              style={{
-                transform: `translate(${position.x * 0.1}px, ${position.y * 0.1}px)`,
-              }}
-            >
-              view All
-            </button>
-          </div> */}
-        </div>
-
-        <div className="BestCategoriesShowContainer">
-
-
-        </div>
-        <br /><br /><br />
-      </section>
+      <CraftingProcess />
     </>
   );
 }

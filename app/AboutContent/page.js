@@ -13,10 +13,12 @@ const AboutContent = () => {
 
                 </div>
 
-                <p>At AVO, as a premier provider of exquisite, customized gifting hampers, we are committed to curating the most artful, luxurious and memorable experiences for any and every occasion.</p>
+                <p>At <b>AVO,</b> as a premier provider of exquisite, <b>customized gifting hampers,</b> we are committed to curating the most artful, <b>luxurious and memorable experiences for any and every occasion.</b></p>
                 <br />
-                <p>Our commitment to personalization sets us apart. We believe every person and event is unique, and we take pride in making your vision a reality with premium quality products and luxurious packaging. Whether it's a celebration of love, a mark of appreciation, a gesture of sympathy, or a token of corporate goodwill, our hampers are imbued with a touch of elegance and individuality that makes every occasion truly special.</p>
-            <img src="https://webtesting-upload.vercel.app/assets/leaficon1-CuZO3KGV.png" alt="" className="overlayImage"/>
+                <p>Our commitment to personalization sets us apart. <b>We believe every person and event is unique,</b> and we take pride in making your vision a reality with premium quality products and luxurious packaging. <b>Whether it's a celebration of love, a mark of appreciation, a gesture of sympathy, or a token of corporate goodwill, our hampers are imbued with a touch of elegance and individuality that makes every occasion truly special.</b></p>
+                <br />
+                <p>Explore our company profile to see our dedication to <b>quality, sustainability, and artistry</b>. Together, lets transform every occasion into an extraordinary memory.</p>
+                <img src="https://webtesting-upload.vercel.app/assets/leaficon1-CuZO3KGV.png" alt="" className="overlayImage" />
             </section>
         </>
     )
