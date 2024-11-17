@@ -35,20 +35,6 @@
     padding: 50px 0;
 }
 
-#TopContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 0;
-    text-align: center;
-}
-
-#TopContainer .Icon {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 20px;
-}
-
 
 #logo-image {
     width: 200px !important;
@@ -64,3 +50,43 @@
     align-items: center;
     justify-content: center;
 }
+
+/* .ProcessPoints .ant-row>.ant-col:nth-child(odd) .BackImageContainer div {
+    position: absolute;
+    height: 80%;
+    width: 400px;
+    background: white;
+    right: 0;
+    bottom: 0;
+}
+
+
+.ProcessPoints .ant-row>.ant-col:nth-child(even) .BackImageContainer div {
+    position: absolute;
+    height: 80%;
+    width: 400px;
+    background: white;
+    left: 0;
+    bottom: 0;
+}
+
+.BackImageContainer {
+    height: 50vh;
+    width: 100%;
+    background-image: url("https://images.unsplash.com/photo-1512911455673-5b69a621b1a0?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    background-attachment: fixed;
+    margin: 10px 0px;
+    position: relative;
+} */
+
+/* .BackImageContainer:nth-child(odd) div {
+    position: absolute;
+    height: 80%;
+    width: 400px;
+    background: red;
+    right: 0px;
+    bottom: 0px;
+} */

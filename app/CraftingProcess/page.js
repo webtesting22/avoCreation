@@ -2,6 +2,7 @@
 import React, { useEffect, useRef } from "react";
 import { Row, Col } from "antd";
 import "./Crafting.css";
+import ProcessContainer from "../ProcessContaienr/ProcessContainer";
 
 const CraftingProcess = () => {
     const containerRefs = useRef([]); // Array of container refs
@@ -75,9 +76,11 @@ const CraftingProcess = () => {
         "https://webtesting-upload.vercel.app/assets/f2060d25-1655-406c-9773-4a9577e33a45-3WKaObN8.jpeg"
     ];
 
+
+    
     return (
         <>
-            <section style={{position:"relative"}}>
+            <section style={{ position: "relative" }}>
                 <div className="imageContainer">
                     <img src="https://webtesting-upload.vercel.app/assets/hindilogo-DyEuu-Wo.jpg" alt="" id="logo-image" />
                     {/* <img src="https://webtesting-upload.vercel.app/assets/leaficon1-CuZO3KGV.png" alt="" /> */}
@@ -103,8 +106,9 @@ const CraftingProcess = () => {
                         ))}
                     </Row>
                 </div>
+                
             </section>
-
+            <ProcessContainer/>
 
         </>
     );

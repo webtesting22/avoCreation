@@ -146,3 +146,56 @@
     font-style: italic;
     font-weight: 600;
 }
+
+#InsideOverlayContent {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    z-index: 2;
+}
+
+.parallax-container {
+    position: relative;
+    overflow: hidden;
+    height: 70vh;
+    /* Adjust the height of the parallax container */
+    margin: 20px 0px;
+}
+
+.parallax-image {
+    position: absolute;
+    top: 6%;
+    height: 100%;
+    width: 100%;
+    transition: transform 0.1s ease-out;
+    object-fit: cover;
+    /* Ensures the image covers the container */
+}
+
+#OverlayContainer {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    /* Ensures the parallax image is cropped if it overflows */
+}
+
+.CraftingProcessImages {
+    padding: 50px 0;
+}
+
+
+#logo-image {
+    width: 200px !important;
+    border-radius: 10px;
+    margin-top: -50px;
+}
+
+.imageContainer {
+    height: 100%;
+    width: 90%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
