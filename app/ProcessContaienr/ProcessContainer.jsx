@@ -5,6 +5,7 @@ const ProcessContainer = () => {
     const ProcessData = [
         {
             title: "Occasion-Based Hampers",
+            image:"https://images.unsplash.com/photo-1480632563560-30f503c09195?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             descriptions: "Our occasion-based hampers are thoughtfully designed to elevate life’s special moments, from celebrations of love to expressions of comfort and appreciation."
         },
         {
