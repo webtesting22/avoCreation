@@ -153,6 +153,8 @@
     width: 100%;
     top: 0px;
     z-index: 2;
+    display: flex;
+    justify-content: center;
 }
 
 

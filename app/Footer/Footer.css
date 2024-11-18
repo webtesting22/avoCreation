@@ -64,3 +64,27 @@
     /* padding: 0px; */
     /* margin-top: 50px; */
 }
+
+@media (max-width:769px){
+    #FooterContainer {
+        background-color: #2e4139;
+        color: white;
+        padding: 0rem 0rem;
+    }
+    #FooterContainer .ant-row .ant-col{
+        width: 100%;
+    }
+    .LogoAndBioContainer {
+        border-right: 1px solid rgba(255, 255, 255, 0.15);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 2rem;
+        
+    }
+    .SocialIconsContainer {
+        padding-top: 30px;
+    }
+}

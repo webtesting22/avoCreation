@@ -9,7 +9,7 @@ const ProcessContainer = () => {
             descriptions: "Our occasion-based hampers are thoughtfully designed to elevate life’s special moments, from celebrations of love to expressions of comfort and appreciation."
         },
         {
-            title: " Personalized Consultation",
+            title: "Personalized Consultation",
             descriptions: "We start with a conversation to understand your unique needs, budget preferences, and the essence of the occasion"
         },
         {

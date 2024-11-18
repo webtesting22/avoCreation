@@ -66,7 +66,7 @@ const ShowProductsHomepage = () => {
         <>
             <section>
                 <div id="OverlayContainer">
-                    <div  ref={containerRef} style={{height:"100vh"}}>
+                    <div  ref={containerRef} id="HomePageOverlayImage">
                         <img
                             src="https://images.unsplash.com/photo-1510828325835-5940110b482a?q=80&w=2928&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90byw1db8fGVufDB8fHx8fA%3D%3D"
                             alt="Parallax"
@@ -78,21 +78,21 @@ const ShowProductsHomepage = () => {
                         <div className="AnimatedDot">
                             <div className="ProductInfo">
                                 <div className="CardContainer">
-                                    Product Detail
+                                   <img src="https://webtesting-upload.vercel.app/assets/Photo%20By%20Ozel%20Bir%20Sey%20-%20Favors-BnW82d09.jpeg" alt="" /> 
                                 </div>
                             </div>
                         </div>
                         <div className="AnimatedDot">
                             <div className="ProductInfo">
                                 <div className="CardContainer">
-                                    Product Detail
+                                    <img src="https://webtesting-upload.vercel.app/assets/Doorgift-C6H_qntA.jpeg" alt="" />
                                 </div>
                             </div>
                         </div>
                         <div className="AnimatedDot">
                             <div className="ProductInfo">
                                 <div className="CardContainer">
-                                    Product Detail
+                                   <img src="https://webtesting-upload.vercel.app/assets/2687a405-84ed-4359-ba0d-56a840c8177c-BcQ8gDRo.jpeg" alt="" />
                                 </div>
                             </div>
                         </div>

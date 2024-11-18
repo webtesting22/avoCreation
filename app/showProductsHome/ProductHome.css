@@ -95,13 +95,18 @@
 
 .AnimatedDot .ProductInfo .CardContainer {
     background-color: white;
-    height: 10vh;
+    /* height: 10vh; */
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: 0.5s;
 
+}
+
+.AnimatedDot .ProductInfo .CardContainer img {
+    width: 100%;
+    height: 100%;
 }
 
 #AnimatedHoverCardContainer {
@@ -259,9 +264,43 @@
     height: 100%;
     width: 100%;
     transition: transform 0.1s ease-out;
+    object-fit: cover;
 }
-
+/* #HomePageOverlayImage{
+    height: 100vh;
+} */
 @media (max-width: 798px) {
+    .ProductsCardsContainer {
+        margin-top: 0rem;
+        margin-bottom: 4rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #HomePageOverlayImage{
+        height: 60vh;
+    }
+    .AnimatedDot:first-child {
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        display: none;
+    }
+
+    .AnimatedDot:last-child {
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        display: none;
+    }
+
+    .AnimatedDot:nth-child(2) {
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        display: none;
+    }
+
     #InsideOverlayContent {
         position: absolute;
         height: 100%;
@@ -278,24 +317,30 @@
 /* Basic masonry grid styles */
 .my-masonry-grid {
     display: flex;
-    margin-left: -16px; /* Compensates for column gap */
+    margin-left: -16px;
+    /* Compensates for column gap */
     width: auto;
-  }
-  .my-masonry-grid_column {
-    padding-left: 16px; /* Space between columns */
+}
+
+.my-masonry-grid_column {
+    padding-left: 16px;
+    /* Space between columns */
     background-clip: padding-box;
-  }
-  
-  /* Style for each gallery item */
-  .gallery-item {
-    margin-bottom: 16px; /* Space between items */
+}
+
+/* Style for each gallery item */
+.gallery-item {
+    margin-bottom: 16px;
+    /* Space between items */
     overflow: hidden;
-    border-radius: 8px; /* Optional: Rounded corners */
-  }
-  .gallery-item img {
+    border-radius: 8px;
+    /* Optional: Rounded corners */
+}
+
+.gallery-item img {
     display: block;
     width: 100%;
     height: auto;
-    border-radius: 8px; /* Match corner radius */
-  }
-  
+    border-radius: 8px;
+    /* Match corner radius */
+}

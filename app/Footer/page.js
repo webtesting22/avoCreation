@@ -47,12 +47,12 @@ const Footer = () => {
             <section id="FooterContainer">
             
                 <Row>
-                    <Col lg={8}>
+                    <Col lg={8} md={24}>
                         <div className="LogoAndBioContainer">
                            <img src="https://webtesting-upload.vercel.app/assets/hindilogo-DyEuu-Wo.jpg" className="Footer-Logo"></img>
                         </div>
                     </Col>
-                    <Col lg={8}>
+                    <Col lg={8} md={24}>
                         <div className="ShortNavigationLinksContainer">
                             <div className="ContainerHeading">
                                 Navigate
@@ -67,7 +67,7 @@ const Footer = () => {
                             ))}
                         </div>
                     </Col>
-                    <Col lg={8}>
+                    <Col lg={8} md={24}>
                         <div className="SocialIconsContainer">
                             <div className="ContainerHeading">
                                 Follow us
@@ -81,6 +81,9 @@ const Footer = () => {
                         </div>
                     </Col>
                 </Row>
+                <div style={{borderTop:"1px solid rgba(255, 255, 255, 0.15)",padding:"20px 0px"}}>
+                    <p style={{textAlign:"center"}}>@2024 <Link href="https://www.outleadsolutions.com/" target="_blank"><b>OutLead Solutions.</b></Link> All rights reserved.</p>
+                </div>
             </section>
         </>
     )
