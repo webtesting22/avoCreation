@@ -60,8 +60,10 @@ const ProcessContainer = () => {
                 <div className="ProcessPoints">
                     <Row>
                         {ProcessData.map((item, index) => (
-                            <Col key={index} lg={24} data-aos="fade-up"
-                            data-aos-delay={index * 100} >
+                            <Col key={index} lg={24} 
+                            // data-aos="fade-up"
+                            // data-aos-delay={index * 100} 
+                            >
                                 <div className="OveryImage">
                                     <div className="BackImageContainer">
                                         <div>

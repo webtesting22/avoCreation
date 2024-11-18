@@ -77,7 +77,7 @@ const CraftingProcess = () => {
     ];
 
 
-    
+
     return (
         <>
             <section style={{ position: "relative" }}>
@@ -106,9 +106,9 @@ const CraftingProcess = () => {
                         ))}
                     </Row>
                 </div>
-                
+
             </section>
-            <ProcessContainer/>
+            <ProcessContainer />
 
         </>
     );
