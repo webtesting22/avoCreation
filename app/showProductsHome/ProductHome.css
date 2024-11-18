@@ -234,6 +234,7 @@
 .CardContentContainer h2:first-child {
     letter-spacing: 5px;
     font-size: 12px;
+    text-transform: uppercase;
 }
 
 .CardContentContainer .AnimatedCommonBtn {
