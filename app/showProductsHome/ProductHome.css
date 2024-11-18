@@ -139,9 +139,6 @@
     position: absolute !important;
 }
 
-.ant-row .ant-col:nth-child(5) {
-    visibility: hidden !important;
-}
 
 .ant-row .ant-col:nth-child(7) {
     visibility: hidden !important;
