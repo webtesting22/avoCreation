@@ -92,6 +92,7 @@
 
 }
 
+
 /* .BackImageContainer:nth-child(odd) div {
     position: absolute;
     height: 80%;
@@ -102,4 +103,33 @@
 } */
 .BackImageContainer h3 {
     font-size: 20px;
+}
+
+@media (max-width:769px){
+    .ProcessPoints .ant-row>.ant-col:nth-child(even) .BackImageContainer div {
+        position: absolute;
+        height: 50%;
+        width: 100%;
+        background: white;
+        left: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0rem 0rem;
+    }
+    .ProcessPoints .ant-row>.ant-col:nth-child(odd) .BackImageContainer div {
+        position: absolute;
+        height: 50%;
+        width: 100%;
+        background: white;
+        left: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0rem 0rem;
+    }
 }

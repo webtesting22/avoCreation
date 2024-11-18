@@ -36,6 +36,9 @@
 .CraftingProcessImages {
     padding: 50px 0;
 }
+.CraftingProcessImages .ant-row .ant-col{
+    width: 100%;
+}
 
 
 #logo-image {
@@ -61,7 +64,6 @@
     right: 0;
     bottom: 0;
 }
-
 
 .ProcessPoints .ant-row>.ant-col:nth-child(even) .BackImageContainer div {
     position: absolute;
@@ -93,7 +95,15 @@
     bottom: 0px;
 } */
 
+
+
 @media (max-width:769px) {
+    .AnimatedCommonBtn{
+        display: none;
+    }
+    .ProcessPoints .ant-row .ant-col{
+        width: 100%;
+    }
     .parallax-image {
         position: static;
         top: 6%;

@@ -187,7 +187,11 @@
     justify-content: center;
 }
 
-@media (max-width:769px){
+@media (max-width:769px) {
+    .BottomContainerAbout .AnimatedCommonBtn {
+        display: none;
+    }
+
     .imageContainer {
         height: 100%;
         width: 90%;
@@ -197,22 +201,25 @@
         justify-content: center;
         display: none;
     }
-    #logo-image{
+
+    #logo-image {
         display: none;
     }
-    
+
     .BottomContainerAbout div h1 {
         font-size: 45px;
         font-weight: 600;
         color: white;
         line-height: 80px;
     }
+
     .AboutUsContentContainer {
         padding: 0rem 1rem;
         height: 80vh;
         width: 100%;
         position: relative;
     }
+
     .marquee-tag-container {
         /* width: 100%; */
         overflow: hidden;
@@ -226,5 +233,5 @@
         height: 100px;
         padding: 20px 0px;
     }
-    
+
 }

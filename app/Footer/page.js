@@ -41,7 +41,6 @@ const Footer = () => {
     return (
         <>
             <section id="FooterContainer">
-
                 <Row>
                     <Col lg={8} md={24}>
                         <div className="LogoAndBioContainer">

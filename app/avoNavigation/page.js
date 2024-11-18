@@ -49,7 +49,7 @@ const AvoNavigation = () => {
     const NavigationsLinks = [
         {
             path: "/about",
-            Links: "About"
+            Links: "About_AVO"
         },
        
        
