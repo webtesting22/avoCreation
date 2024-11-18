@@ -242,7 +242,7 @@ const ShowProductsHomepage = () => {
                                                     {/* <h2>{item.category}</h2> */}
                                                     <h2>{item.name}</h2>
                                                 </div>
-                                                <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+                                                {/* <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
                                                     <button
                                                         className="AnimatedCommonBtn"
                                                         onMouseMove={handleMouseMove}
@@ -253,7 +253,7 @@ const ShowProductsHomepage = () => {
                                                     >
                                                         View more
                                                     </button>
-                                                </div>
+                                                </div> */}
                                             </div>
                                         </div>
                                     </div>
