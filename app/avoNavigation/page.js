@@ -52,10 +52,7 @@ const AvoNavigation = () => {
             Links: "About"
         },
        
-        {
-            path: "/",  // Fallback for missing path
-            Links: "Contact"
-        }
+       
     ];
 
     const SocialIconsdata = [

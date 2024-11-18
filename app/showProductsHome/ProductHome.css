@@ -266,9 +266,11 @@
     transition: transform 0.1s ease-out;
     object-fit: cover;
 }
-#HomePageOverlayImage{
+
+#HomePageOverlayImage {
     height: 100vh;
 }
+
 @media (max-width: 798px) {
     .ProductsCardsContainer {
         margin-top: 0rem;
@@ -276,10 +278,11 @@
         display: flex;
         flex-wrap: wrap;
     }
-    
-    #HomePageOverlayImage{
+
+    #HomePageOverlayImage {
         height: 60vh;
     }
+
     .AnimatedDot:first-child {
         position: absolute;
         left: 0%;

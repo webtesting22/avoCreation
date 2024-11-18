@@ -36,20 +36,16 @@ const Footer = () => {
             path: "/about",
             Links: "About"
         },
-       
-        {
-            path: "/",  // Fallback for missing path
-            Links: "Contact"
-        }
+
     ];
     return (
         <>
             <section id="FooterContainer">
-            
+
                 <Row>
                     <Col lg={8} md={24}>
                         <div className="LogoAndBioContainer">
-                           <img src="https://webtesting-upload.vercel.app/assets/hindilogo-DyEuu-Wo.jpg" className="Footer-Logo"></img>
+                            <img src="https://webtesting-upload.vercel.app/assets/hindilogo-DyEuu-Wo.jpg" className="Footer-Logo"></img>
                         </div>
                     </Col>
                     <Col lg={8} md={24}>
@@ -81,8 +77,8 @@ const Footer = () => {
                         </div>
                     </Col>
                 </Row>
-                <div style={{borderTop:"1px solid rgba(255, 255, 255, 0.15)",padding:"20px 0px"}}>
-                    <p style={{textAlign:"center"}}>@2024 <Link href="https://www.outleadsolutions.com/" target="_blank"><b>OutLead Solutions.</b></Link> All rights reserved.</p>
+                <div style={{ borderTop: "1px solid rgba(255, 255, 255, 0.15)", padding: "20px 0px" }}>
+                    <p style={{ textAlign: "center" }}>@2024 <Link href="https://www.outleadsolutions.com/" target="_blank"><b>OutLead Solutions.</b></Link> All rights reserved.</p>
                 </div>
             </section>
         </>
