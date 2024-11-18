@@ -7,7 +7,7 @@ const CursorAnimated = () => {
     const [isMoving, setIsMoving] = useState(false);
 
     // Define a set of colors for the stars
-    const colors = ['#FFD700', '#FF69B4', '#7FFFD4', '#FF6347', '#1E90FF', '#ADFF2F'];
+    const colors = ["#000000","#000000","#000000","#000000","#000000","#000000","#000000"];
 
     useEffect(() => {
         const handleMouseMove = (e) => {

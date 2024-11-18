@@ -204,8 +204,8 @@ section {
     z-index: -1;
     transition: .5s;
   }
-  
-  
+
+
   #BestCategoriesCard {
     background-color: white;
     border: 1px solid rgb(239, 239, 239);
@@ -270,7 +270,7 @@ section {
   }
 }
 
-#TopContainer .Icon{
+#TopContainer .Icon {
   position: absolute;
   width: 30px;
   top: 85px;
