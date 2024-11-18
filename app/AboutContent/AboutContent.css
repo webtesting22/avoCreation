@@ -11,3 +11,13 @@
 b{
     font-weight: 600;
 }
+
+@media (max-width:769px){
+    #AboutContent .overlayImage{
+        position: absolute;
+    top: 0%;
+    width: 130px;
+    right: 0%;
+    opacity: 0.2;
+    }
+}

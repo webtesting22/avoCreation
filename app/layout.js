@@ -21,7 +21,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  
+
   return (
     <html lang="en">
       <head>
@@ -34,11 +34,11 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-       
+
         <AvoNavigation />
-        <CursorAnimated/>
+        <CursorAnimated />
         {children}
-        <Footer/>
+        <Footer />
         <Script src="https://unpkg.com/aos@next/dist/aos.js" strategy="beforeInteractive" />
         <Script id="aos-init">{`AOS.init();`}</Script>
       </body>

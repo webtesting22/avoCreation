@@ -32,7 +32,7 @@ const AvoNavigation = () => {
     useEffect(() => {
         const handleScroll = () => {
             // Calculate scroll-based height, maxing out at 8vh
-            const newHeight = Math.min(window.scrollY / 3, window.innerHeight * 0.08);
+            const newHeight = Math.min(window.scrollY / 3, window.innerHeight * 0.1);
             setNavHeight(newHeight);
         };
 
@@ -49,7 +49,7 @@ const AvoNavigation = () => {
     const NavigationsLinks = [
         {
             path: "/about",
-            Links: "About_AVO"
+            Links: "About"
         },
     ];
 

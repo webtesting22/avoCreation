@@ -103,12 +103,26 @@
 } */
 .BackImageContainer h3 {
     font-size: 20px;
+    font-weight: 600;
 }
 
-@media (max-width:769px){
+@media (max-width:769px) {
+    .BackImageContainer {
+        height: 70vh;
+        width: 100%;
+        background-image: url("https://images.unsplash.com/photo-1512911455673-5b69a621b1a0?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        background-size: cover;
+        background-position: center;
+        object-fit: cover;
+        background-attachment: fixed;
+        margin: 10px 0px;
+        position: relative;
+
+    }
+
     .ProcessPoints .ant-row>.ant-col:nth-child(even) .BackImageContainer div {
         position: absolute;
-        height: 50%;
+        height: 60%;
         width: 100%;
         background: white;
         left: 0;
@@ -119,9 +133,10 @@
         flex-direction: column;
         padding: 0rem 0rem;
     }
+
     .ProcessPoints .ant-row>.ant-col:nth-child(odd) .BackImageContainer div {
         position: absolute;
-        height: 50%;
+        height: 60%;
         width: 100%;
         background: white;
         left: 0;

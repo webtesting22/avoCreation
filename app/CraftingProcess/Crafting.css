@@ -98,9 +98,18 @@
 
 
 @media (max-width:769px) {
-    .AnimatedCommonBtn{
-        display: none;
+    .parallax-container {
+        position: relative;
+        overflow: hidden;
+        height: 30vh;
+        /* Adjust the height of the parallax container */
+        margin: 8px 0px;
     }
+    
+    .CraftingProcessImages .ant-row .ant-col{
+        width: 50%;
+    }
+    
     .ProcessPoints .ant-row .ant-col{
         width: 100%;
     }
