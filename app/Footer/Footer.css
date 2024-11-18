@@ -12,11 +12,11 @@
 }
 
 .SocialIconsContainer {
-    padding-top: 94px;
+    padding-top: 0px;
 }
 
 .ShortNavigationLinksContainer {
-    padding-top: 2rem;
+    padding-top: 0rem;
 }
 
 .ShortNavigationLinksContainer {
@@ -85,6 +85,6 @@
         
     }
     .SocialIconsContainer {
-        padding-top: 30px;
+        padding-top: 0px;
     }
 }
