@@ -249,12 +249,7 @@
 }
 
 
-/* Parallax.css */
-.parallax-container {
-    position: relative;
-    overflow: hidden;
-    height: 100vh;
-}
+
 
 .parallax-image {
     position: absolute;
@@ -275,11 +270,7 @@
 
     }
 
-    .parallax-container {
-        position: relative;
-        overflow: hidden;
-        height: 60vh;
-    }
+
 }
 
 /* Gallery.css */

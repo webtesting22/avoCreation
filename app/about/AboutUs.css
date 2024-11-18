@@ -155,23 +155,8 @@
     z-index: 2;
 }
 
-.parallax-container {
-    position: relative;
-    overflow: hidden;
-    height: 70vh;
-    /* Adjust the height of the parallax container */
-    margin: 20px 0px;
-}
 
-.parallax-image {
-    position: absolute;
-    top: 6%;
-    height: 100%;
-    width: 100%;
-    transition: transform 0.1s ease-out;
-    object-fit: cover;
-    /* Ensures the image covers the container */
-}
+
 
 #OverlayContainer {
     position: relative;
