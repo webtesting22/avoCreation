@@ -19,7 +19,7 @@ const CursorAnimated = () => {
             const newStar = { x, y, color, id: Math.random() };
 
             // Add a new star and limit the number of stars
-            setStars((prevStars) => [...prevStars.slice(-20), newStar]);
+            setStars((prevStars) => [...prevStars.slice(-10), newStar]);
 
             // Set a timeout to reset the movement status when the cursor stops
             clearTimeout(window.starTimeout);
