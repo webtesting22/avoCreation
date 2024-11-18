@@ -266,9 +266,9 @@
     transition: transform 0.1s ease-out;
     object-fit: cover;
 }
-/* #HomePageOverlayImage{
+#HomePageOverlayImage{
     height: 100vh;
-} */
+}
 @media (max-width: 798px) {
     .ProductsCardsContainer {
         margin-top: 0rem;

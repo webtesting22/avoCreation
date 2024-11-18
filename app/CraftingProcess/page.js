@@ -90,7 +90,7 @@ const CraftingProcess = () => {
         "https://webtesting-upload.vercel.app/assets/%E2%94%98%C3%A7%E2%95%AA%C2%BB%E2%95%AA%C2%BA%E2%94%98%C3%A8%E2%95%AA%C2%BA%20%E2%94%98%C3%A5%E2%95%AA%E2%94%82%E2%95%AA%C2%BA%E2%94%98%C3%A8%E2%94%98%C3%B6%E2%94%98%C3%A8%E2%95%AA%E2%8C%90%20_%20gift%20boxes-BhRS_buy.jpeg",
         "https://webtesting-upload.vercel.app/assets/6-cBAnwhQA.jpeg",
         "https://webtesting-upload.vercel.app/assets/LEBARAN%20GIFT%20GUIDE_%202019%20-%20LIVING%20LOVING%202-ClhDlkyz.jpeg",
-        "https://webtesting-upload.vercel.app/assets/LEBARAN%20GIFT%20GUIDE_%202019%20-%20LIVING%20LOVING%202-ClhDlkyz.jpeg",
+        "https://webtesting-upload.vercel.app/assets/92bf1f57-c134-4c3d-82fc-b26499e2e4ac-BeGD9Dzc.jpeg",
         "https://webtesting-upload.vercel.app/assets/f2060d25-1655-406c-9773-4a9577e33a45-3WKaObN8.jpeg"
     ];
 
