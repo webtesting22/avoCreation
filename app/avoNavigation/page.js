@@ -51,8 +51,6 @@ const AvoNavigation = () => {
             path: "/about",
             Links: "About_AVO"
         },
-       
-       
     ];
 
     const SocialIconsdata = [

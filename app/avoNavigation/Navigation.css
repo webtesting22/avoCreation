@@ -252,6 +252,7 @@
     #AnimatedAvoNavigationContainer{
         width: 100%;
         display: flex;
+        align-items: center;
     }
     #NavigationContainer {
         width: 100%;
